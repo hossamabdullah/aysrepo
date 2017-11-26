@@ -80,9 +80,7 @@ def _ssh_authorize (service, vm_info):
     key_path = j.sal.fs.joinPaths(sshkey.path, 'id_rsa')
     password = vm_info['accounts'][0]['password'] if vm_info['accounts'][0]['password'] != '' else None
     executor = j.tools.executor.getSSHBased(addr=service.model.data.ipPublic, port=service.model.data.sshPort,
-                                            login=vm_info['accounts'][0]['login'], passwd=password,
-                                            allow_agent=True, look_for_keys=True, timeout=5, usecache=False,
-                                            passphrase=None, key_filename=key_path)
+                                            timeout=5, usecache=False)
     executor.prefab.ssh.authorize("root", sshkey.model.data.keyPub)
     service.model.data.sshAuthorized = True
     service.saveAll()

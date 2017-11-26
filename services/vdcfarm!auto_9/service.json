@@ -1,34 +1,10 @@
 {
  "actions":[
   {
-   "actionKey":"ce980a2b9c9897ebdf7dfede220b61e3",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"install",
-   "period":0,
-   "state":"scheduled",
-   "timeout":0
-  },
-  {
-   "actionKey":"8121908a1b590a0a079f719251d63827",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"getExecutor",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
    "actionKey":"5eb8490ce3e79e477a670131cd481921",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511709483,
+   "lastRun":1511709750,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -40,12 +16,24 @@
    "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511709483,
+   "lastRun":1511709750,
    "log":true,
    "longjob":false,
    "name":"init",
    "period":0,
    "state":"ok",
+   "timeout":0
+  },
+  {
+   "actionKey":"da4bbe0e6b26b65452efffa965141da9",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"install",
+   "period":0,
+   "state":"scheduled",
    "timeout":0
   },
   {
@@ -253,34 +241,27 @@
    "timeout":0
   }
  ],
- "actorKey":"15d3a8f2fd3d618b4ab0e9300992a0f6",
- "actorName":"os.ssh.ubuntu",
- "dataSchema":"\n@0x92cba4b182ff7e26;\nstruct Schema {\n\tnode @0 :Text;\n\tsshkey @1 :Text;\n\tsshAddr @2 :Text;\n\tsshPort @3 :Int64 = 0;\n\n}\n",
+ "actorKey":"e7157f2eaba0e861fab8ede0a866f2ca",
+ "actorName":"vdcfarm",
+ "consumers":[
+  {
+   "actorName":"vdc",
+   "key":"609baeb7595ea1776a49fc0107d7e7e1",
+   "serviceName":"vdcname"
+  }
+ ],
+ "dataSchema":"\n@0xc9068ab71f0c803d;\nstruct Schema {\n\tdescription @0 :Text;\n\n}\n",
  "eventFilters":[
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_6\/vdc!vdcname\/node!demo\/os!demo",
+  "path":"services\/vdcfarm!auto_9",
   "url":"jdhsjhds:"
  },
- "key":"89339b8f2059f6265c497d7682320ace",
- "name":"demo",
+ "key":"2f7106f535447073548ed6f677db7774",
+ "name":"auto_9",
  "parent":{
-  "actorName":"node.ovc",
-  "key":"396c8102ecf59b897d828d9f2f316063",
-  "serviceName":"demo"
+
  },
- "producers":[
-  {
-   "actorName":"sshkey",
-   "key":"bba69d208747a86ef5f3a75f1a234418",
-   "serviceName":"auto_0"
-  },
-  {
-   "actorName":"node.ovc",
-   "key":"396c8102ecf59b897d828d9f2f316063",
-   "serviceName":"demo"
-  }
- ],
  "state":"ok"
 }
