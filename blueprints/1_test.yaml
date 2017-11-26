@@ -2,3 +2,6 @@ g8client__myg8:
     url: 'gig.demo.greenitglobe.com'
     login: 'fake_login'
     password: 'fake_password'
+
+actions:
+  - action: install
