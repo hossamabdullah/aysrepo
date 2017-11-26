@@ -4,7 +4,7 @@
    "actionKey":"de5ef6aac5e9fdce4e1988944ef0422a",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511704404,
+   "lastRun":1511706856,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -28,7 +28,7 @@
    "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511704404,
+   "lastRun":1511706856,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -40,12 +40,12 @@
    "actionKey":"da4bbe0e6b26b65452efffa965141da9",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511704588,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"install",
    "period":0,
-   "state":"ok",
+   "state":"scheduled",
    "timeout":0
   },
   {
@@ -229,9 +229,9 @@
    "timeout":0
   },
   {
-   "actionKey":"6b505949144626db0e9afb088a22b36e",
+   "actionKey":"4f0c618232d512a3e4cbddc387d6ce7e",
    "errorNr":0,
-   "isJob":false,
+   "isJob":true,
    "lastRun":0,
    "log":true,
    "longjob":false,
@@ -253,18 +253,23 @@
    "timeout":0
   }
  ],
- "actorKey":"033c741f2d7ea1880afd934c07ac5dab",
+ "actorKey":"4394c70ecfde24c755c9781b5e789750",
  "actorName":"g8client",
  "consumers":[
   {
    "actorName":"vdc",
-   "key":"e45f64adce89f2454d8739c4faf1dfd1",
+   "key":"3a30f080eaa1ddd2f28ca700a885c16c",
    "serviceName":"vdcname"
   },
   {
    "actorName":"account",
-   "key":"ad4dcc27156a65312d307a5e91a0b197",
+   "key":"f69e4d63b77b3f1d4f090e6ad7f44251",
    "serviceName":"hossam"
+  },
+  {
+   "actorName":"disk.ovc",
+   "key":"ca1d52c732daf2aea4f52e7a3122041a",
+   "serviceName":"myDisk"
   }
  ],
  "dataSchema":"\n@0x822d58b0388d9011;\nstruct Schema {\n\turl @0 :Text;\n\tlogin @1 :Text;\n\tpassword @2 :Text;\n\tjwt @3 :Text;\n\taccount @4 :Text;\n\tport @5 :Int64 = 443;\n\n}\n",
@@ -275,7 +280,7 @@
   "path":"services\/g8client!env",
   "url":"jdhsjhds:"
  },
- "key":"ece79dcfe01fb48df6874e9752c9ee83",
+ "key":"7090d54c3efbe109cf78a6afc49bba4e",
  "name":"env",
  "parent":{
 

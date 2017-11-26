@@ -67,7 +67,7 @@ def install (job):
     if 'g8client' not in service.producers:
         raise j.exceptions.AYSNotFound("No producer g8client found. Cannot continue install of %s" % service)
     g8client = service.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(service.model.data.account)
     externalnetworkId = service.model.data.externalNetworkID
     externalnetworkId = None if externalnetworkId == -1 else externalnetworkId
@@ -114,7 +114,7 @@ def processChange (job):
     if 'g8client' not in service.producers:
         raise j.exceptions.AYSNotFound("No producer g8client found. Cannot continue processChange of %s" % service)
     g8client = service.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(service.model.data.account)
     space = acc.space_get(name=service.model.dbobj.name,
                           location=service.model.data.location,
@@ -154,7 +154,7 @@ def uninstall (job):
     if 'g8client' not in service.producers:
         raise j.exceptions.AYSNotFound("No producer g8client found. Cannot continue uninstall of %s" % service)
     g8client = service.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(service.model.data.account)
     space = acc.space_get(service.model.dbobj.name, service.model.data.location)
     space.delete()
@@ -168,7 +168,7 @@ def enable (job):
     if 'g8client' not in service.producers:
         raise j.exceptions.AYSNotFound("No producer g8client found. Cannot continue enabling  %s" % service)
     g8client = service.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(service.model.data.account)
     space = acc.space_get(name=service.model.dbobj.name,
                           location=service.model.data.location,
@@ -186,7 +186,7 @@ def disable (job):
     if 'g8client' not in service.producers:
         raise j.exceptions.AYSNotFound("No producer g8client found. Cannot continue disabling  %s" % service)
     g8client = service.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(service.model.data.account)
     space = acc.space_get(name=service.model.dbobj.name,
                           location=service.model.data.location,
@@ -205,7 +205,7 @@ def execute_routeros_script (job):
         raise j.exceptions.AYSNotFound("Param script can't be empty. Cannot continue executing of %s" % service)
     script.replace("\n", ";")
     g8client = service.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(service.model.data.account)
     space = acc.space_get(service.model.dbobj.name, service.model.data.location)
     space.execute_routeros_script(script)

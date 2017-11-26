@@ -3,7 +3,7 @@ def _get_cloud_space (service):
     if 'g8client' not in vdc.producers:
         raise j.exceptions.AYSNotFound("No producer g8client found. Cannot continue %s" % service)
     g8client = vdc.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(vdc.model.data.account)
     space = acc.space_get(vdc.model.dbobj.name, vdc.model.data.location)
     return space
@@ -350,7 +350,7 @@ def export (job):
     if 'g8client' not in vdc.producers:
         raise j.exceptions.AYSNotFound("No producer g8client found. Cannot continue export of %s" % service)
     g8client = vdc.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(vdc.model.data.account)
     space = acc.space_get(vdc.model.dbobj.name, vdc.model.data.location)
     if service.name not in space.machines:
@@ -576,7 +576,7 @@ def clone (job):
     if 'g8client' not in vdc.producers:
         raise j.exceptions.RuntimeError("No producer g8client found. Cannot continue clone of %s" % service)
     g8client = vdc.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(vdc.model.data.account)
     space = acc.space_get(vdc.model.dbobj.name, vdc.model.data.location)
     if service.name not in space.machines:
@@ -607,7 +607,7 @@ def attach_external_network (job):
     if 'g8client' not in vdc.producers:
         raise j.exceptions.RuntimeError("No producer g8client found. Cannot continue attaching external network to %s" % service)
     g8client = vdc.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(vdc.model.data.account)
     space = acc.space_get(vdc.model.dbobj.name, vdc.model.data.location)
     if service.name not in space.machines:
@@ -625,7 +625,7 @@ def detach_external_network (job):
     if 'g8client' not in vdc.producers:
         raise j.exceptions.RuntimeError("No producer g8client found. Cannot continue detaching external network from %s" % service)
     g8client = vdc.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(vdc.model.data.account)
     space = acc.space_get(vdc.model.dbobj.name, vdc.model.data.location)
     if service.name not in space.machines:
@@ -648,7 +648,7 @@ def list_snapshots (job):
     if 'g8client' not in vdc.producers:
         raise j.exceptions.RuntimeError("No producer g8client found. Cannot continue creating snapshot of %s" % service)
     g8client = vdc.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(vdc.model.data.account)
     space = acc.space_get(vdc.model.dbobj.name, vdc.model.data.location)
     if service.name not in space.machines:
@@ -668,7 +668,7 @@ def snapshot (job):
     if 'g8client' not in vdc.producers:
         raise j.exceptions.RuntimeError("No producer g8client found. Cannot continue creating snapshot of %s" % service)
     g8client = vdc.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(vdc.model.data.account)
     space = acc.space_get(vdc.model.dbobj.name, vdc.model.data.location)
     if service.name not in space.machines:
@@ -686,7 +686,7 @@ def rollback_snapshot (job):
     if 'g8client' not in vdc.producers:
         raise j.exceptions.RuntimeError("No producer g8client found. Cannot continue creating snapshot of %s" % service)
     g8client = vdc.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(vdc.model.data.account)
     space = acc.space_get(vdc.model.dbobj.name, vdc.model.data.location)
     if service.name not in space.machines:
@@ -706,7 +706,7 @@ def delete_snapshot (job):
     if 'g8client' not in vdc.producers:
         raise j.exceptions.RuntimeError("No producer g8client found. Cannot continue creating snapshot of %s" % service)
     g8client = vdc.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromService(g8client)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     acc = cl.account_get(vdc.model.data.account)
     space = acc.space_get(vdc.model.dbobj.name, vdc.model.data.location)
     if service.name not in space.machines:
