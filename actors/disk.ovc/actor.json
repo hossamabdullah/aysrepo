@@ -1,22 +1,48 @@
 {
  "actions":[
   {
-   "actionKey":"de5ef6aac5e9fdce4e1988944ef0422a",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":1511695354,
+   "actionKey":"2506fb1c989e9eed432771d3d47b921d",
+   "isJob":false,
    "log":true,
    "longjob":false,
-   "name":"input",
+   "name":"init_actions_",
    "period":0,
-   "state":"ok",
+   "state":"new",
    "timeout":0
   },
   {
-   "actionKey":"18412a16dce33a5a4f67d0b8a232374f",
-   "errorNr":0,
+   "actionKey":"931645aa798810ec2f512539b9c7dce2",
    "isJob":true,
-   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"init",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"bd570d273cda75b6a1057e4f636b3d4a",
+   "isJob":true,
+   "log":true,
+   "longjob":false,
+   "name":"create",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"0a8b18b1bcdb9447926435a327592a51",
+   "isJob":true,
+   "log":true,
+   "longjob":false,
+   "name":"delete",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"7669f7788b5cba7d8e0f2d21a3d80712",
+   "isJob":true,
    "log":true,
    "longjob":false,
    "name":"processChange",
@@ -25,34 +51,38 @@
    "timeout":0
   },
   {
-   "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
-   "errorNr":0,
+   "actionKey":"12d9c1f877f509b5a48f43912fcdcf85",
    "isJob":true,
-   "lastRun":1511695354,
    "log":true,
    "longjob":false,
-   "name":"init",
+   "name":"limit_io",
    "period":0,
-   "state":"ok",
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"5eb8490ce3e79e477a670131cd481921",
+   "isJob":true,
+   "log":true,
+   "longjob":false,
+   "name":"input",
+   "period":0,
+   "state":"new",
    "timeout":0
   },
   {
    "actionKey":"da4bbe0e6b26b65452efffa965141da9",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":1511695490,
    "log":true,
    "longjob":false,
    "name":"install",
    "period":0,
-   "state":"ok",
+   "state":"new",
    "timeout":0
   },
   {
    "actionKey":"0eef386c3345ab46ac9e6ab5e7ab5ede",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"stop",
@@ -62,9 +92,7 @@
   },
   {
    "actionKey":"bad649376a832a41cfd6ea3e2abba8a1",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"start",
@@ -74,9 +102,7 @@
   },
   {
    "actionKey":"5e9a5696313033c5d72307d0fa9dc808",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"monitor",
@@ -86,9 +112,7 @@
   },
   {
    "actionKey":"466df1c54ec402ed99795789a758109e",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"halt",
@@ -98,9 +122,7 @@
   },
   {
    "actionKey":"1f6c3c2e89ab6d2efbc4bd1efebb73a7",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"check_up",
@@ -110,9 +132,7 @@
   },
   {
    "actionKey":"2a5e4802ad31c94e48d73a62480cc23a",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"check_down",
@@ -122,9 +142,7 @@
   },
   {
    "actionKey":"18720d7eaf125a87ad1201c2688dda24",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"check_requirements",
@@ -134,9 +152,7 @@
   },
   {
    "actionKey":"7dc25e7588a75d5b3511951f4117fc23",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"cleanup",
@@ -146,9 +162,7 @@
   },
   {
    "actionKey":"c1bca378f600f40d52aee3fe58e93d71",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"data_export",
@@ -158,9 +172,7 @@
   },
   {
    "actionKey":"99ff12fa0d5f604410c7946731e69ecb",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"data_import",
@@ -170,9 +182,7 @@
   },
   {
    "actionKey":"30c658a0ac834cade6b5f1673f2ed3e0",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"uninstall",
@@ -182,9 +192,7 @@
   },
   {
    "actionKey":"12a3e294623999b86a94326163610df9",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"removedata",
@@ -194,9 +202,7 @@
   },
   {
    "actionKey":"ebd7904eedb1561e323a6d519ca6279d",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"consume",
@@ -206,9 +212,7 @@
   },
   {
    "actionKey":"15fa1049656910911e2b6a501997f6fc",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"action_pre_",
@@ -218,55 +222,41 @@
   },
   {
    "actionKey":"bd3429e2f2716973e27b7f254034652a",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"action_post_",
    "period":0,
    "state":"new",
    "timeout":0
-  },
-  {
-   "actionKey":"6b505949144626db0e9afb088a22b36e",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"init_actions_",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"297e8a3a8a0c88012943599d62f6beeb",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"delete",
-   "period":0,
-   "state":"new",
-   "timeout":0
   }
  ],
- "actorKey":"733cc6f5a26a541383f6834821ac50e8",
- "actorName":"g8client",
- "dataSchema":"\n@0x822d58b0388d9011;\nstruct Schema {\n\turl @0 :Text;\n\tlogin @1 :Text;\n\tpassword @2 :Text;\n\tjwt @3 :Text;\n\taccount @4 :Text;\n\tport @5 :Int64 = 443;\n\n}\n",
+ "dataUI":"",
  "eventFilters":[
 
  ],
+ "flists":[
+
+ ],
  "gitRepo":{
-  "path":"services\/g8client!myg8",
+  "path":"",
   "url":"jdhsjhds:"
  },
- "key":"a9ed2dd6d1d496cf7c2d54f52afcd539",
- "name":"myg8",
- "parent":{
-
+ "name":"disk.ovc",
+ "origin":{
+  "gitUrl":"git@github.com:openvcloud\/ays_templates.git",
+  "path":"templates\/disk.ovc\/"
  },
- "state":"ok"
+ "producers":[
+  {
+   "actorRole":"g8client",
+   "argname":"g8client",
+   "auto":true,
+   "maxServices":100,
+   "minServices":1,
+   "optional":false
+  }
+ ],
+ "serviceDataSchema":"\n@0xa5f2e16a4b6fc00b;\nstruct Schema {\n\tsize @0 :Int64 = 1;\n\ttype @1 :Text = \"D\";\n\tdescription @2 :Text = \"disk\";\n\tmaxIOPS @3 :Int64 = 0;\n\tdevicename @4 :Text;\n\tssdSize @5 :Int64 = 10;\n  g8client @6 :Text;\n  location @7 :Text;\n\ttotalBytesSec @8 :Int64;\n  readBytesSec @9 :Int64;\n\twriteBytesSec @10 :Int64;\n\ttotalIopsSec @11 :Int64;\n  readIopsSec @12 :Int64;\n\twriteIopsSec @13 :Int64;\n\ttotalBytesSecMax @14 :Int64;\n\treadBytesSecMax @15 :Int64;\n  writeBytesSecMax @16 :Int64;\n\ttotalIopsSecMax @17 :Int64;\n\treadIopsSecMax @18 :Int64;\n  writeIopsSecMax @19 :Int64;\n\tsizeIopsSec @20 :Int64;\n  diskId @21: Int64;\n}\n",
+ "state":"new"
 }

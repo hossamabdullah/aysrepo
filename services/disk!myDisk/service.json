@@ -1,19 +1,55 @@
 {
  "actions":[
   {
-   "actionKey":"de5ef6aac5e9fdce4e1988944ef0422a",
+   "actionKey":"2506fb1c989e9eed432771d3d47b921d",
    "errorNr":0,
-   "isJob":true,
-   "lastRun":1511695354,
+   "isJob":false,
+   "lastRun":0,
    "log":true,
    "longjob":false,
-   "name":"input",
+   "name":"init_actions_",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"931645aa798810ec2f512539b9c7dce2",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":1511700205,
+   "log":true,
+   "longjob":false,
+   "name":"init",
    "period":0,
    "state":"ok",
    "timeout":0
   },
   {
-   "actionKey":"18412a16dce33a5a4f67d0b8a232374f",
+   "actionKey":"bd570d273cda75b6a1057e4f636b3d4a",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"create",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"0a8b18b1bcdb9447926435a327592a51",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"delete",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"7669f7788b5cba7d8e0f2d21a3d80712",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
@@ -25,13 +61,25 @@
    "timeout":0
   },
   {
-   "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
+   "actionKey":"12d9c1f877f509b5a48f43912fcdcf85",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511695354,
+   "lastRun":0,
    "log":true,
    "longjob":false,
-   "name":"init",
+   "name":"limit_io",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"5eb8490ce3e79e477a670131cd481921",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":1511700205,
+   "log":true,
+   "longjob":false,
+   "name":"input",
    "period":0,
    "state":"ok",
    "timeout":0
@@ -40,12 +88,12 @@
    "actionKey":"da4bbe0e6b26b65452efffa965141da9",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511695490,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"install",
    "period":0,
-   "state":"ok",
+   "state":"scheduled",
    "timeout":0
   },
   {
@@ -227,46 +275,36 @@
    "period":0,
    "state":"new",
    "timeout":0
-  },
-  {
-   "actionKey":"6b505949144626db0e9afb088a22b36e",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"init_actions_",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"297e8a3a8a0c88012943599d62f6beeb",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"delete",
-   "period":0,
-   "state":"new",
-   "timeout":0
   }
  ],
- "actorKey":"733cc6f5a26a541383f6834821ac50e8",
- "actorName":"g8client",
- "dataSchema":"\n@0x822d58b0388d9011;\nstruct Schema {\n\turl @0 :Text;\n\tlogin @1 :Text;\n\tpassword @2 :Text;\n\tjwt @3 :Text;\n\taccount @4 :Text;\n\tport @5 :Int64 = 443;\n\n}\n",
+ "actorKey":"bb0a31179ac8d8b44329ef180484057c",
+ "actorName":"disk.ovc",
+ "consumers":[
+  {
+   "actorName":"node.ovc",
+   "key":"ccc05420cfa9dd4875895fb507e9361e",
+   "serviceName":"demo"
+  }
+ ],
+ "dataSchema":"\n@0xa5f2e16a4b6fc00b;\nstruct Schema {\n\tsize @0 :Int64 = 1;\n\ttype @1 :Text = \"D\";\n\tdescription @2 :Text = \"disk\";\n\tmaxIOPS @3 :Int64 = 0;\n\tdevicename @4 :Text;\n\tssdSize @5 :Int64 = 10;\n  g8client @6 :Text;\n  location @7 :Text;\n\ttotalBytesSec @8 :Int64;\n  readBytesSec @9 :Int64;\n\twriteBytesSec @10 :Int64;\n\ttotalIopsSec @11 :Int64;\n  readIopsSec @12 :Int64;\n\twriteIopsSec @13 :Int64;\n\ttotalBytesSecMax @14 :Int64;\n\treadBytesSecMax @15 :Int64;\n  writeBytesSecMax @16 :Int64;\n\ttotalIopsSecMax @17 :Int64;\n\treadIopsSecMax @18 :Int64;\n  writeIopsSecMax @19 :Int64;\n\tsizeIopsSec @20 :Int64;\n  diskId @21: Int64;\n}\n",
  "eventFilters":[
 
  ],
  "gitRepo":{
-  "path":"services\/g8client!myg8",
+  "path":"services\/disk!myDisk",
   "url":"jdhsjhds:"
  },
- "key":"a9ed2dd6d1d496cf7c2d54f52afcd539",
- "name":"myg8",
+ "key":"36f6ae34020bfa66fb0254930718589c",
+ "name":"myDisk",
  "parent":{
 
  },
+ "producers":[
+  {
+   "actorName":"g8client",
+   "key":"a9ed2dd6d1d496cf7c2d54f52afcd539",
+   "serviceName":"myg8"
+  }
+ ],
  "state":"ok"
 }

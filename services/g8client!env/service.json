@@ -4,7 +4,7 @@
    "actionKey":"de5ef6aac5e9fdce4e1988944ef0422a",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511695354,
+   "lastRun":1511704404,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -28,7 +28,7 @@
    "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511695354,
+   "lastRun":1511704404,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -40,12 +40,12 @@
    "actionKey":"da4bbe0e6b26b65452efffa965141da9",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511695490,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"install",
    "period":0,
-   "state":"ok",
+   "state":"scheduled",
    "timeout":0
   },
   {
@@ -231,7 +231,7 @@
   {
    "actionKey":"6b505949144626db0e9afb088a22b36e",
    "errorNr":0,
-   "isJob":true,
+   "isJob":false,
    "lastRun":0,
    "log":true,
    "longjob":false,
@@ -253,18 +253,30 @@
    "timeout":0
   }
  ],
- "actorKey":"733cc6f5a26a541383f6834821ac50e8",
+ "actorKey":"033c741f2d7ea1880afd934c07ac5dab",
  "actorName":"g8client",
+ "consumers":[
+  {
+   "actorName":"vdc",
+   "key":"e45f64adce89f2454d8739c4faf1dfd1",
+   "serviceName":"vdcname"
+  },
+  {
+   "actorName":"account",
+   "key":"ad4dcc27156a65312d307a5e91a0b197",
+   "serviceName":"hossam"
+  }
+ ],
  "dataSchema":"\n@0x822d58b0388d9011;\nstruct Schema {\n\turl @0 :Text;\n\tlogin @1 :Text;\n\tpassword @2 :Text;\n\tjwt @3 :Text;\n\taccount @4 :Text;\n\tport @5 :Int64 = 443;\n\n}\n",
  "eventFilters":[
 
  ],
  "gitRepo":{
-  "path":"services\/g8client!myg8",
+  "path":"services\/g8client!env",
   "url":"jdhsjhds:"
  },
- "key":"a9ed2dd6d1d496cf7c2d54f52afcd539",
- "name":"myg8",
+ "key":"ece79dcfe01fb48df6874e9752c9ee83",
+ "name":"env",
  "parent":{
 
  },

@@ -1,0 +1,20 @@
+{
+ "diskId":0,
+ "maxIOPS":0,
+ "readBytesSec":0,
+ "readBytesSecMax":0,
+ "readIopsSec":0,
+ "readIopsSecMax":0,
+ "size":10,
+ "sizeIopsSec":0,
+ "ssdSize":10,
+ "totalBytesSec":0,
+ "totalBytesSecMax":0,
+ "totalIopsSec":0,
+ "totalIopsSecMax":0,
+ "type":"D",
+ "writeBytesSec":0,
+ "writeBytesSecMax":0,
+ "writeIopsSec":0,
+ "writeIopsSecMax":0
+}

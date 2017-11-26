@@ -1,10 +1,34 @@
 {
  "actions":[
   {
-   "actionKey":"de5ef6aac5e9fdce4e1988944ef0422a",
+   "actionKey":"ce980a2b9c9897ebdf7dfede220b61e3",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511695354,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"install",
+   "period":0,
+   "state":"scheduled",
+   "timeout":0
+  },
+  {
+   "actionKey":"8121908a1b590a0a079f719251d63827",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"getExecutor",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"5eb8490ce3e79e477a670131cd481921",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":1511704405,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -13,37 +37,13 @@
    "timeout":0
   },
   {
-   "actionKey":"18412a16dce33a5a4f67d0b8a232374f",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"processChange",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
    "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511695354,
+   "lastRun":1511704405,
    "log":true,
    "longjob":false,
    "name":"init",
-   "period":0,
-   "state":"ok",
-   "timeout":0
-  },
-  {
-   "actionKey":"da4bbe0e6b26b65452efffa965141da9",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":1511695490,
-   "log":true,
-   "longjob":false,
-   "name":"install",
    "period":0,
    "state":"ok",
    "timeout":0
@@ -229,7 +229,7 @@
    "timeout":0
   },
   {
-   "actionKey":"6b505949144626db0e9afb088a22b36e",
+   "actionKey":"4f0c618232d512a3e4cbddc387d6ce7e",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
@@ -253,20 +253,34 @@
    "timeout":0
   }
  ],
- "actorKey":"733cc6f5a26a541383f6834821ac50e8",
- "actorName":"g8client",
- "dataSchema":"\n@0x822d58b0388d9011;\nstruct Schema {\n\turl @0 :Text;\n\tlogin @1 :Text;\n\tpassword @2 :Text;\n\tjwt @3 :Text;\n\taccount @4 :Text;\n\tport @5 :Int64 = 443;\n\n}\n",
+ "actorKey":"912f337899fc2f243e464840132c6dfd",
+ "actorName":"os.ssh.ubuntu",
+ "dataSchema":"\n@0x92cba4b182ff7e26;\nstruct Schema {\n\tnode @0 :Text;\n\tsshkey @1 :Text;\n\tsshAddr @2 :Text;\n\tsshPort @3 :Int64 = 0;\n\n}\n",
  "eventFilters":[
 
  ],
  "gitRepo":{
-  "path":"services\/g8client!myg8",
+  "path":"services\/vdcfarm!auto_1\/vdc!vdcname\/node!demo\/os!demo",
   "url":"jdhsjhds:"
  },
- "key":"a9ed2dd6d1d496cf7c2d54f52afcd539",
- "name":"myg8",
+ "key":"3091c33c382255baa26926ffea3f9589",
+ "name":"demo",
  "parent":{
-
+  "actorName":"node.ovc",
+  "key":"ccc05420cfa9dd4875895fb507e9361e",
+  "serviceName":"demo"
  },
+ "producers":[
+  {
+   "actorName":"sshkey",
+   "key":"eee8a540e408f750acbbb261e01d66e8",
+   "serviceName":"auto_0"
+  },
+  {
+   "actorName":"node.ovc",
+   "key":"ccc05420cfa9dd4875895fb507e9361e",
+   "serviceName":"demo"
+  }
+ ],
  "state":"ok"
 }

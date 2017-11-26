@@ -1,0 +1,14 @@
+{
+ "account":"hossam",
+ "cloudspaceID":0,
+ "description":"vdc for demo",
+ "disabled":false,
+ "externalNetworkID":-1,
+ "g8client":"env",
+ "location":"du-conv-2",
+ "maxCPUCapacity":-1,
+ "maxDiskCapacity":-1,
+ "maxMemoryCapacity":-1,
+ "maxNetworkPeerTransfer":-1,
+ "maxNumPublicIP":-1
+}
