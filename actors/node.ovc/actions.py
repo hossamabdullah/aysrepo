@@ -65,7 +65,7 @@ def _configure_ports (service, machine):
 
 def _check_ssh_authorization (service, machine):
     if not service.model.data.sshAuthorized:
-        _, vm_info = machine.get_machine_ip()
+        _, vm_info = machine.machineip_get()
         if vm_info['status'] not in ['HALTED', 'PAUSED']:
             prefab = _ssh_authorize(service, vm_info)
             return prefab
@@ -223,7 +223,7 @@ def install (job):
             machine = _create_machine(service, space)
         _configure_ports(service, machine)
         authorization_user(machine, service)
-        ip, vm_info = machine.get_machine_ip()
+        ip, vm_info = machine.machineip_get()
         if not ip:
             raise j.exceptions.RuntimeError('The machine %s does not get an IP ' % service.name)
         service.model.data.machineId = machine.id
@@ -234,7 +234,7 @@ def install (job):
         prefab = _check_ssh_authorization(service, machine)
         if prefab:
             _configure_disks(service, machine, prefab)
-        _, vm_info = machine.get_machine_ip()
+        _, vm_info = machine.machineip_get()
         if service.model.data.vmInfoCallback:
             requests.post(service.model.data.vmInfoCallback, headers={'Content-type': 'application/json'}, data=json.dumps(vm_info))
         service.saveAll()
