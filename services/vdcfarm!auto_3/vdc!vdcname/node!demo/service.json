@@ -110,9 +110,9 @@
   },
   {
    "actionKey":"51120e0dfc4bc884d278844460e41855",
-   "errorNr":0,
+   "errorNr":6,
    "isJob":true,
-   "lastRun":0,
+   "lastRun":1511708332,
    "log":true,
    "longjob":false,
    "name":"install",
@@ -594,5 +594,5 @@
    "serviceName":"vdcname"
   }
  ],
- "state":"ok"
+ "state":"error"
 }

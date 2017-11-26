@@ -40,12 +40,12 @@
    "actionKey":"da4bbe0e6b26b65452efffa965141da9",
    "errorNr":0,
    "isJob":true,
-   "lastRun":0,
+   "lastRun":1511706936,
    "log":true,
    "longjob":false,
    "name":"install",
    "period":0,
-   "state":"scheduled",
+   "state":"ok",
    "timeout":0
   },
   {
@@ -229,7 +229,7 @@
    "timeout":0
   },
   {
-   "actionKey":"4f0c618232d512a3e4cbddc387d6ce7e",
+   "actionKey":"6b505949144626db0e9afb088a22b36e",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
