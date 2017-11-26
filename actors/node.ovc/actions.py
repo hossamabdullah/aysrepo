@@ -14,12 +14,14 @@ def _create_machine (service, space):
     image_names = [i['name'] for i in space.images]
     if service.model.data.osImage not in image_names:
         raise j.exceptions.NotFound('Image %s not available for vdc %s' % (service.model.data.osImage, vdc.name))
+    sshName = service.producers.get('sshkey')[0].name
     machine = space.machine_create(name=service.name,
                                    image=service.model.data.osImage,
                                    memsize=service.model.data.memory,
                                    disksize=service.model.data.bootdiskSize,
                                    sizeId=service.model.data.sizeID if service.model.data.sizeID >= 0 else None,
-                                   stackId=service.model.data.stackID if service.model.data.stackID >= 0 else None)
+                                   stackId=o.model.data.stackID if service.model.data.stackID >= 0 else None,
+                                   sshkeyname=sshName)
     return machine
     
 

@@ -13,7 +13,7 @@
    "timeout":0
   },
   {
-   "actionKey":"4f44148c8c4c61e63ad6958232cea266",
+   "actionKey":"32af738cccc4f758bb6cf710c2aaa39b",
    "errorNr":0,
    "isJob":false,
    "lastRun":0,
@@ -76,7 +76,7 @@
    "actionKey":"bc1d84e19e6e2ccdb01f3a5cc710b713",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511706928,
+   "lastRun":1511708980,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -88,7 +88,7 @@
    "actionKey":"af420c12820a09a687aab8b4fcd08ea5",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511706928,
+   "lastRun":1511708981,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -110,9 +110,9 @@
   },
   {
    "actionKey":"51120e0dfc4bc884d278844460e41855",
-   "errorNr":6,
+   "errorNr":0,
    "isJob":true,
-   "lastRun":1511708332,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"install",
@@ -553,12 +553,12 @@
    "timeout":0
   }
  ],
- "actorKey":"733b19ba260e5478450cf4fc301677ea",
+ "actorKey":"fc885696517b7cc07334a0bd0b150f18",
  "actorName":"node.ovc",
  "consumers":[
   {
    "actorName":"os.ssh.ubuntu",
-   "key":"b4c6f45ef3693e5575ff569c3496c4ad",
+   "key":"387a9a44e003f41d08f9398f96bd0044",
    "serviceName":"demo"
   }
  ],
@@ -567,32 +567,32 @@
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_3\/vdc!vdcname\/node!demo",
+  "path":"services\/vdcfarm!auto_4\/vdc!vdcname\/node!demo",
   "url":"jdhsjhds:"
  },
- "key":"41a09e22bf8d252bf9b495abe8386f64",
+ "key":"a8ba976e93cd2a5621611158c0654ba7",
  "name":"demo",
  "parent":{
   "actorName":"vdc",
-  "key":"7d7db9262a5651c37b079239d10dbda2",
+  "key":"2fdb4787e47fddbf6db26bbc43c928bf",
   "serviceName":"vdcname"
  },
  "producers":[
   {
    "actorName":"disk.ovc",
-   "key":"7ec44731e9bbe4157542bc25ee75ef70",
+   "key":"ba4aca235c89db54524687286e7e9579",
    "serviceName":"myDisk"
   },
   {
    "actorName":"sshkey",
-   "key":"1a2e2c94934e95df5efe80b3aeb3d07a",
+   "key":"a86232638df0918551b06a99a6074154",
    "serviceName":"auto_0"
   },
   {
    "actorName":"vdc",
-   "key":"7d7db9262a5651c37b079239d10dbda2",
+   "key":"2fdb4787e47fddbf6db26bbc43c928bf",
    "serviceName":"vdcname"
   }
  ],
- "state":"error"
+ "state":"ok"
 }
