@@ -28,13 +28,13 @@ def _create_machine (service, space):
 def _configure_ports (service, machine):
     ssh_present = any([port_forward for port_forward in service.model.data.ports if port_forward.startswith('22')])
     if not ssh_present:
-        for port_forward in machine.portforwardings:
+        for port_forward in machine.portforwards:
             if int(port_forward["localPort"]) == 22:
                 ssh_present = True
                 break
     data = j.data.serializer.json.loads(service.model.dataJSON)
     ports = data.get('ports', []) if ssh_present else data.get('ports', []) + ['22']
-    forwarded_ports = machine.portforwardings
+    forwarded_ports = machine.portforwards
     for port in ports:
         skip = False
         port_parts = port.split(':')
@@ -50,7 +50,7 @@ def _configure_ports (service, machine):
         if not skip:
             machine.create_portforwarding(publicport=public_port, localport=local_port, protocol='tcp')
     ports = []
-    for port_forward in machine.portforwardings:
+    for port_forward in machine.portforwards:
         port_added = "{public}:{local}".format(public=port_forward["publicPort"], local=port_forward["localPort"])
         ports.append(port_added)
     ssh_port = '22'
@@ -292,7 +292,7 @@ def processChange (job):
                         publicport=public_port, localport=local_port, protocol='tcp'
                     )
                 all_ports = []
-                for port_forward in machine.portforwardings:
+                for port_forward in machine.portforwards:
                     port_added = "{public}:{local}".format(public=port_forward["publicPort"],
                                                            local=port_forward["localPort"])
                     all_ports.append(port_added)
@@ -494,14 +494,14 @@ Return the public port assigned
     else:
         raise RuntimeError('machine not found')
     spaceport = None
-    for pf in machine.portforwardings:
+    for pf in machine.portforwards:
         if pf['localPort'] == requested_port:
             spaceport = pf['publicPort']
             break
     ports = set(service.model.data.ports)
     if spaceport is None:
         if public_port is None:
-            unavailable_ports = [int(portinfo['publicPort']) for portinfo in machine.space.portforwardings]
+            unavailable_ports = [int(portinfo['publicPort']) for portinfo in machine.space.portforwards]
             spaceport = 2200
             while True:
                 if spaceport not in unavailable_ports:
