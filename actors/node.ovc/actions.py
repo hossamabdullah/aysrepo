@@ -230,6 +230,7 @@ def install (job):
         service.model.data.ipPrivate = ip
         service.model.data.sshLogin = vm_info['accounts'][0]['login']
         service.model.data.sshPassword = vm_info['accounts'][0]['password']
+        import ipdb; ipdb.set_trace()
         prefab = _check_ssh_authorization(service, machine)
         if prefab:
             _configure_disks(service, machine, prefab)
