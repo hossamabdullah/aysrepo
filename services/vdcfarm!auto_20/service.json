@@ -4,7 +4,7 @@
    "actionKey":"5eb8490ce3e79e477a670131cd481921",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511786777,
+   "lastRun":1511787982,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -16,7 +16,7 @@
    "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511786777,
+   "lastRun":1511787983,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -28,12 +28,12 @@
    "actionKey":"da4bbe0e6b26b65452efffa965141da9",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511786794,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"install",
    "period":0,
-   "state":"ok",
+   "state":"scheduled",
    "timeout":0
   },
   {
@@ -217,7 +217,7 @@
    "timeout":0
   },
   {
-   "actionKey":"6b505949144626db0e9afb088a22b36e",
+   "actionKey":"4f0c618232d512a3e4cbddc387d6ce7e",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
@@ -241,12 +241,12 @@
    "timeout":0
   }
  ],
- "actorKey":"155ed9253e2536fa8242bf1d965be121",
+ "actorKey":"269508c2eac403c195fee87067aaf5ab",
  "actorName":"vdcfarm",
  "consumers":[
   {
    "actorName":"vdc",
-   "key":"bab4fb4115547daa32c4ef67845a1c3e",
+   "key":"1c66904ae6f49c85c767bde6d98df522",
    "serviceName":"vdcname"
   }
  ],
@@ -255,11 +255,11 @@
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_19",
+  "path":"services\/vdcfarm!auto_20",
   "url":"jdhsjhds:"
  },
- "key":"019e37804d2b8b6e9c3ddbf03d51041b",
- "name":"auto_19",
+ "key":"52466189e0243aaccd9141c8a49f4345",
+ "name":"auto_20",
  "parent":{
 
  },
