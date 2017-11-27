@@ -76,7 +76,7 @@
    "actionKey":"bc1d84e19e6e2ccdb01f3a5cc710b713",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511710016,
+   "lastRun":1511766678,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -88,7 +88,7 @@
    "actionKey":"af420c12820a09a687aab8b4fcd08ea5",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511710016,
+   "lastRun":1511766678,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -110,9 +110,9 @@
   },
   {
    "actionKey":"57d84f4163c6a19b395ff865767aba5b",
-   "errorNr":6,
+   "errorNr":0,
    "isJob":true,
-   "lastRun":1511766398,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"install",
@@ -553,12 +553,12 @@
    "timeout":0
   }
  ],
- "actorKey":"23ed9c6eca164ae6c04357b97126ecce",
+ "actorKey":"3694361fcd3d8cf18c7fbfbd0daba63a",
  "actorName":"node.ovc",
  "consumers":[
   {
    "actorName":"os.ssh.ubuntu",
-   "key":"c872faed7039fdb60848cfbec9900ede",
+   "key":"b413ad6d680fe1fadb6e9173fcf2c912",
    "serviceName":"demo"
   }
  ],
@@ -567,32 +567,32 @@
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_10\/vdc!vdcname\/node!demo",
+  "path":"services\/vdcfarm!auto_11\/vdc!vdcname\/node!demo",
   "url":"jdhsjhds:"
  },
- "key":"8b8e255c4e1b6b59ca6d8deb09f2a92c",
+ "key":"ab4713b1220da14dc4827d16b046b9fa",
  "name":"demo",
  "parent":{
   "actorName":"vdc",
-  "key":"73bc67bc0cc0cdc6b919a2c37598c912",
+  "key":"3d955dd85a19f189ff66fb5639cb1d71",
   "serviceName":"vdcname"
  },
  "producers":[
   {
    "actorName":"disk.ovc",
-   "key":"bc4a306d3ae1621e01ced72413946f65",
+   "key":"03e375b931c42bb229e8f63f7946972e",
    "serviceName":"myDisk"
   },
   {
    "actorName":"sshkey",
-   "key":"531a5d919a2767ac330c4d93a3cf602f",
+   "key":"d7d91a3693b1a61b49ba664bf4035591",
    "serviceName":"auto_0"
   },
   {
    "actorName":"vdc",
-   "key":"73bc67bc0cc0cdc6b919a2c37598c912",
+   "key":"3d955dd85a19f189ff66fb5639cb1d71",
    "serviceName":"vdcname"
   }
  ],
- "state":"error"
+ "state":"ok"
 }
