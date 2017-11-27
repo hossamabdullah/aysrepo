@@ -3,9 +3,9 @@
  "disk":[
   "myDisk"
  ],
- "ipPrivate":"192.168.103.253",
- "ipPublic":"192.168.28.11",
- "machineId":2025,
+ "ipPrivate":"192.168.103.254",
+ "ipPublic":"192.168.28.10",
+ "machineId":2026,
  "memory":1,
  "osImage":"Ubuntu 16.04 x64",
  "ports":[
@@ -14,7 +14,7 @@
  "sizeID":-1,
  "sshAuthorized":false,
  "sshLogin":"cloudscalers",
- "sshPassword":"c45E6b3sX",
+ "sshPassword":"waJ8ie3wJ",
  "sshPort":2200,
  "stackID":-1
 }

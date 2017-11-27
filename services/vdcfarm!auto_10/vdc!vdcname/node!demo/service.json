@@ -110,9 +110,9 @@
   },
   {
    "actionKey":"57d84f4163c6a19b395ff865767aba5b",
-   "errorNr":3,
+   "errorNr":6,
    "isJob":true,
-   "lastRun":1511710127,
+   "lastRun":1511766398,
    "log":true,
    "longjob":false,
    "name":"install",
