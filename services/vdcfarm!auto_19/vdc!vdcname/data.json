@@ -1,11 +1,11 @@
 {
  "account":"hossam",
- "cloudspaceID":326,
+ "cloudspaceID":0,
  "description":"vdc for demo",
  "disabled":false,
  "externalNetworkID":-1,
  "g8client":"env",
- "location":"du-conv-2",
+ "location":"be-g8-4",
  "maxCPUCapacity":-1,
  "maxDiskCapacity":-1,
  "maxMemoryCapacity":-1,
