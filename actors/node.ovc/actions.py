@@ -79,9 +79,9 @@ def _ssh_authorize (service, vm_info):
     sshkey = service.producers['sshkey'][0]
     key_path = j.sal.fs.joinPaths(sshkey.path, 'id_rsa')
     password = vm_info['accounts'][0]['password'] if vm_info['accounts'][0]['password'] != '' else None
+    import ipdb; ipdb.set_trace()
     executor = j.tools.executor.getSSHBased(addr=service.model.data.ipPublic, port=service.model.data.sshPort,
                                             timeout=5, usecache=False)
-    import ipdb; ipdb.set_trace()
     service.logger.info("7ossam: " + sshkey.model.data.keyPub)
     executor.prefab.ssh.authorize("root", sshkey.model.data.keyPub)
     service.model.data.sshAuthorized = True
