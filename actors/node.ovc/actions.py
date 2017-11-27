@@ -81,6 +81,7 @@ def _ssh_authorize (service, vm_info):
     password = vm_info['accounts'][0]['password'] if vm_info['accounts'][0]['password'] != '' else None
     executor = j.tools.executor.getSSHBased(addr=service.model.data.ipPublic, port=service.model.data.sshPort,
                                             timeout=5, usecache=False)
+    import ipdb; ipdb.set_trace()
     service.logger.info("7ossam: " + sshkey.model.data.keyPub)
     executor.prefab.ssh.authorize("root", sshkey.model.data.keyPub)
     service.model.data.sshAuthorized = True
@@ -230,7 +231,6 @@ def install (job):
         service.model.data.ipPrivate = ip
         service.model.data.sshLogin = vm_info['accounts'][0]['login']
         service.model.data.sshPassword = vm_info['accounts'][0]['password']
-        import ipdb; ipdb.set_trace()
         prefab = _check_ssh_authorization(service, machine)
         if prefab:
             _configure_disks(service, machine, prefab)
