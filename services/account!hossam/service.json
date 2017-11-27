@@ -50,9 +50,9 @@
   },
   {
    "actionKey":"e3d8152934003aa68bbe7e912ba560a7",
-   "errorNr":0,
+   "errorNr":4,
    "isJob":true,
-   "lastRun":0,
+   "lastRun":1511786898,
    "log":true,
    "longjob":false,
    "name":"install",
@@ -330,5 +330,5 @@
    "serviceName":"env"
   }
  ],
- "state":"ok"
+ "state":"error"
 }
