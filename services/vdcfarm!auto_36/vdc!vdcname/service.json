@@ -16,7 +16,7 @@
    "actionKey":"7535f668de477726491f90311e3ec0e9",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511862987,
+   "lastRun":1511863361,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -28,7 +28,7 @@
    "actionKey":"849e469e7b71762d4c05763cfd26048a",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511862987,
+   "lastRun":1511863362,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -52,12 +52,12 @@
    "actionKey":"104e3aa162031787839f9c7e2266c332",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511863000,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"install",
    "period":0,
-   "state":"ok",
+   "state":"scheduled",
    "timeout":0
   },
   {
@@ -313,12 +313,12 @@
    "timeout":0
   }
  ],
- "actorKey":"cfcfcda4c9ceebfa571a8db8812ee651",
+ "actorKey":"0f3e9de3ae49fc861b377498d4dd2af3",
  "actorName":"vdc",
  "consumers":[
   {
    "actorName":"node.ovc",
-   "key":"d8f6bea63c6bef49ac8626960d31c611",
+   "key":"62b6a55761e3e207fedc0ebd60e8e7d6",
    "serviceName":"demo"
   }
  ],
@@ -327,30 +327,30 @@
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_35\/vdc!vdcname",
+  "path":"services\/vdcfarm!auto_36\/vdc!vdcname",
   "url":"jdhsjhds:"
  },
- "key":"d8038bc21d9ee6a7001bf588e1c9116a",
+ "key":"852a9f67a0b356b7271537e3589bed54",
  "name":"vdcname",
  "parent":{
   "actorName":"vdcfarm",
-  "key":"e5aa7c43dfd742b6215b99079aa7724d",
-  "serviceName":"auto_35"
+  "key":"b66122996ff17d80f7d75b2da972e789",
+  "serviceName":"auto_36"
  },
  "producers":[
   {
    "actorName":"g8client",
-   "key":"9b38588652ab3357968625e3be2fb535",
+   "key":"9adb5a938b0ce0df1b41e5f2c271c746",
    "serviceName":"env"
   },
   {
    "actorName":"vdcfarm",
-   "key":"e5aa7c43dfd742b6215b99079aa7724d",
-   "serviceName":"auto_35"
+   "key":"b66122996ff17d80f7d75b2da972e789",
+   "serviceName":"auto_36"
   },
   {
    "actorName":"account",
-   "key":"6b064e93e2ea7b7dcb16ee8e9849d5ea",
+   "key":"5394bb21398182cdd418259bea97e286",
    "serviceName":"hossam"
   }
  ],

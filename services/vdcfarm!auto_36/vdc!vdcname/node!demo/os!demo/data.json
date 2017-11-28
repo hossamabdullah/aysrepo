@@ -1,5 +1,5 @@
 {
  "node":"demo",
- "sshPort":2200,
+ "sshPort":0,
  "sshkey":""
 }
