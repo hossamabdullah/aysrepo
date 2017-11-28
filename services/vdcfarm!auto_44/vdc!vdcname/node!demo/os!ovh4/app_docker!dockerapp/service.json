@@ -1,10 +1,10 @@
 {
  "actions":[
   {
-   "actionKey":"5eb8490ce3e79e477a670131cd481921",
+   "actionKey":"6219622506dad7ff169f87ffcc8c264a",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511871112,
+   "lastRun":1511871386,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -13,19 +13,7 @@
    "timeout":0
   },
   {
-   "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":1511871112,
-   "log":true,
-   "longjob":false,
-   "name":"init",
-   "period":0,
-   "state":"ok",
-   "timeout":0
-  },
-  {
-   "actionKey":"da4bbe0e6b26b65452efffa965141da9",
+   "actionKey":"842dafb343809ebb7e0b14952a3acd96",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
@@ -34,18 +22,6 @@
    "name":"install",
    "period":0,
    "state":"scheduled",
-   "timeout":0
-  },
-  {
-   "actionKey":"0eef386c3345ab46ac9e6ab5e7ab5ede",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"stop",
-   "period":0,
-   "state":"new",
    "timeout":0
   },
   {
@@ -61,6 +37,18 @@
    "timeout":0
   },
   {
+   "actionKey":"0eef386c3345ab46ac9e6ab5e7ab5ede",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"stop",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
    "actionKey":"5e9a5696313033c5d72307d0fa9dc808",
    "errorNr":0,
    "isJob":true,
@@ -70,6 +58,18 @@
    "name":"monitor",
    "period":0,
    "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":1511871386,
+   "log":true,
+   "longjob":false,
+   "name":"init",
+   "period":0,
+   "state":"ok",
    "timeout":0
   },
   {
@@ -241,27 +241,29 @@
    "timeout":0
   }
  ],
- "actorKey":"438787eff041be9b95d29f9e1a7e7999",
- "actorName":"vdcfarm",
- "consumers":[
-  {
-   "actorName":"vdc",
-   "key":"080f47eda3ea5a4c66ee3636d6d4769e",
-   "serviceName":"vdcname"
-  }
- ],
- "dataSchema":"\n@0xc9068ab71f0c803d;\nstruct Schema {\n\tdescription @0 :Text;\n\n}\n",
+ "actorKey":"bde8aa569bdc623d793f22d70cc27c0d",
+ "actorName":"app_docker",
+ "dataSchema":"\n@0xdb50cbb218e7a21f;\nstruct Schema {\n\tos @0 :Text;\n\n}\n",
  "eventFilters":[
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_43",
+  "path":"services\/vdcfarm!auto_44\/vdc!vdcname\/node!demo\/os!ovh4\/app_docker!dockerapp",
   "url":"jdhsjhds:"
  },
- "key":"c30b879568e52874ab4d8bb9428b1bd4",
- "name":"auto_43",
+ "key":"aba503ab8177dd3fdff1e8e914896654",
+ "name":"dockerapp",
  "parent":{
-
+  "actorName":"os.ssh.ubuntu",
+  "key":"c09c82b0670b677f67e586b0d72c32e3",
+  "serviceName":"ovh4"
  },
+ "producers":[
+  {
+   "actorName":"os.ssh.ubuntu",
+   "key":"c09c82b0670b677f67e586b0d72c32e3",
+   "serviceName":"ovh4"
+  }
+ ],
  "state":"ok"
 }
