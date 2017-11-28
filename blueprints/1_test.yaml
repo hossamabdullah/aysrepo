@@ -1,4 +1,4 @@
-sshkey__id_rsa:
+sshkey__id_rsa.pub:
  
 g8client__env:
     url: 'be-g8-4.demo.greenitglobe.com'

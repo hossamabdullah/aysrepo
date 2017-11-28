@@ -1,108 +1,46 @@
 {
  "actions":[
   {
-   "actionKey":"49a4c602a739cf338df82099dd81a879",
-   "isJob":false,
-   "log":true,
-   "longjob":false,
-   "name":"init_actions_",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"2cde15ab32f3d33598f6e30ce826d90e",
+   "actionKey":"4e1db8b808e01cfb8f43cb12f410ba12",
+   "errorNr":0,
    "isJob":true,
-   "log":true,
-   "longjob":false,
-   "name":"init",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"71abf42096c7effc8282901e4f3da9a9",
-   "isJob":false,
-   "log":true,
-   "longjob":false,
-   "name":"authorization_user",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"5c4fcc7418e47994027dcf265f2d8b6e",
-   "isJob":false,
-   "log":true,
-   "longjob":false,
-   "name":"get_user_accessright",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"e3d8152934003aa68bbe7e912ba560a7",
-   "isJob":true,
-   "log":true,
-   "longjob":false,
-   "name":"install",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"f5db2ac92f8bb6e0120b57763090d139",
-   "isJob":true,
-   "log":true,
-   "longjob":false,
-   "name":"processChange",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"d1854fd0bb2c3056a1e52fe9581c1846",
-   "isJob":true,
-   "log":true,
-   "longjob":false,
-   "name":"uninstall",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"2060115fe45603865c64673ed9faa153",
-   "isJob":true,
-   "log":true,
-   "longjob":false,
-   "name":"list_disks",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"a90f3f5e1c4622eeb26e3fd5a13c084c",
-   "isJob":true,
-   "log":true,
-   "longjob":false,
-   "name":"get_consumption",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"5eb8490ce3e79e477a670131cd481921",
-   "isJob":true,
+   "lastRun":1511855484,
    "log":true,
    "longjob":false,
    "name":"input",
    "period":0,
-   "state":"new",
+   "state":"ok",
+   "timeout":0
+  },
+  {
+   "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":1511855484,
+   "log":true,
+   "longjob":false,
+   "name":"init",
+   "period":0,
+   "state":"ok",
+   "timeout":0
+  },
+  {
+   "actionKey":"da4bbe0e6b26b65452efffa965141da9",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"install",
+   "period":0,
+   "state":"scheduled",
    "timeout":0
   },
   {
    "actionKey":"0eef386c3345ab46ac9e6ab5e7ab5ede",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"stop",
@@ -112,7 +50,9 @@
   },
   {
    "actionKey":"bad649376a832a41cfd6ea3e2abba8a1",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"start",
@@ -122,7 +62,9 @@
   },
   {
    "actionKey":"5e9a5696313033c5d72307d0fa9dc808",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"monitor",
@@ -132,7 +74,9 @@
   },
   {
    "actionKey":"466df1c54ec402ed99795789a758109e",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"halt",
@@ -142,7 +86,9 @@
   },
   {
    "actionKey":"1f6c3c2e89ab6d2efbc4bd1efebb73a7",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"check_up",
@@ -152,7 +98,9 @@
   },
   {
    "actionKey":"2a5e4802ad31c94e48d73a62480cc23a",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"check_down",
@@ -162,7 +110,9 @@
   },
   {
    "actionKey":"18720d7eaf125a87ad1201c2688dda24",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"check_requirements",
@@ -172,7 +122,9 @@
   },
   {
    "actionKey":"7dc25e7588a75d5b3511951f4117fc23",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"cleanup",
@@ -182,7 +134,9 @@
   },
   {
    "actionKey":"c1bca378f600f40d52aee3fe58e93d71",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"data_export",
@@ -192,7 +146,9 @@
   },
   {
    "actionKey":"99ff12fa0d5f604410c7946731e69ecb",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"data_import",
@@ -201,8 +157,22 @@
    "timeout":0
   },
   {
-   "actionKey":"12a3e294623999b86a94326163610df9",
+   "actionKey":"30c658a0ac834cade6b5f1673f2ed3e0",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"uninstall",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"12a3e294623999b86a94326163610df9",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"removedata",
@@ -212,7 +182,9 @@
   },
   {
    "actionKey":"ebd7904eedb1561e323a6d519ca6279d",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"consume",
@@ -222,7 +194,9 @@
   },
   {
    "actionKey":"15fa1049656910911e2b6a501997f6fc",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"action_pre_",
@@ -232,7 +206,9 @@
   },
   {
    "actionKey":"bd3429e2f2716973e27b7f254034652a",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"action_post_",
@@ -241,8 +217,22 @@
    "timeout":0
   },
   {
+   "actionKey":"6b505949144626db0e9afb088a22b36e",
+   "errorNr":0,
+   "isJob":false,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"init_actions_",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
    "actionKey":"297e8a3a8a0c88012943599d62f6beeb",
+   "errorNr":0,
    "isJob":true,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"delete",
@@ -251,32 +241,20 @@
    "timeout":0
   }
  ],
- "dataUI":"",
+ "actorKey":"f34773cb69e0977331572e93a8d8682c",
+ "actorName":"sshkey",
+ "dataSchema":"@0xaf4e2a542f11b714;\nstruct Schema {\n\tkeyPath @0 :Text;\n\tkeyName @1 :Text;\n\tkeyPassphrase @2 :Text;\n\tkeyPriv @3 :Text;\n\tkeyPub @4 :Text;\n}\n",
  "eventFilters":[
 
  ],
- "flists":[
-
- ],
  "gitRepo":{
-  "path":"",
+  "path":"services\/sshkey!id_rsa.pub",
   "url":"jdhsjhds:"
  },
- "name":"account",
- "origin":{
-  "gitUrl":"git@github.com:openvcloud\/ays_templates.git",
-  "path":"templates\/account\/"
+ "key":"b365f08a7185386669dabf45bed27066",
+ "name":"id_rsa.pub",
+ "parent":{
+
  },
- "producers":[
-  {
-   "actorRole":"g8client",
-   "argname":"g8client",
-   "auto":true,
-   "maxServices":100,
-   "minServices":0,
-   "optional":false
-  }
- ],
- "serviceDataSchema":"\n@0xdd89b76472682068;\nstruct Schema {\n\tdescription @0 :Text;\n\tg8client @1 :Text;\n\taccountusers @2 :List(UserVdcEntry);\n\taccountID @3 :Int64 = 0;\n\tmaxMemoryCapacity @4 :Int64 = -1;\n\tmaxCPUCapacity @5 :Int64 = -1;\n\tmaxNumPublicIP @6 :Int64 = -1;\n\tmaxDiskCapacity @7 :Int64 = -1;\n\tconsumptionFrom @8 :Int64;\n\tconsumptionTo @9 :Int64;\n\tconsumptionData @10 :Data;\n\n\tstruct UserVdcEntry {\n\t\tname @0 :Text;\n\t\taccesstype @1 :Text;\n\t}\n}\n",
- "state":"new"
+ "state":"ok"
 }
