@@ -94,7 +94,7 @@ def _configure_disks (service, machine, prefab):
         disk_name = disk.model.dbobj.name
         if disk_name not in machine_disks:
             disk_args = disk.model.data
-            disk_args.diskId = machine.add_disk(name=disk.name,
+            disk_args.diskId = machine.disk_add(name=disk.name,
                                                 description=disk_args.description,
                                                 size=disk_args.size,
                                                 type=disk_args.type.upper(),
