@@ -81,7 +81,7 @@ def _ssh_authorize (service, vm_info):
     password = vm_info['accounts'][0]['password'] if vm_info['accounts'][0]['password'] != '' else None
     executor = j.tools.executor.getSSHBased(addr=service.model.data.ipPublic, port=service.model.data.sshPort,
                                             timeout=5, usecache=False)
-    executor.prefab.ssh.authorize("root", sshkey.model.data.keyPub)
+    executor.prefab.system.ssh.authorize("root", sshkey.model.data.keyPub)
     service.model.data.sshAuthorized = True
     service.saveAll()
     return executor.prefab
