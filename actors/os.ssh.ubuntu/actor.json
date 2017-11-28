@@ -1,46 +1,48 @@
 {
  "actions":[
   {
-   "actionKey":"4e1db8b808e01cfb8f43cb12f410ba12",
-   "errorNr":0,
+   "actionKey":"ce980a2b9c9897ebdf7dfede220b61e3",
    "isJob":true,
-   "lastRun":1511855541,
-   "log":true,
-   "longjob":false,
-   "name":"input",
-   "period":0,
-   "state":"ok",
-   "timeout":0
-  },
-  {
-   "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":1511855541,
-   "log":true,
-   "longjob":false,
-   "name":"init",
-   "period":0,
-   "state":"ok",
-   "timeout":0
-  },
-  {
-   "actionKey":"da4bbe0e6b26b65452efffa965141da9",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"install",
    "period":0,
-   "state":"scheduled",
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"8121908a1b590a0a079f719251d63827",
+   "isJob":true,
+   "log":true,
+   "longjob":false,
+   "name":"getExecutor",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"5eb8490ce3e79e477a670131cd481921",
+   "isJob":true,
+   "log":true,
+   "longjob":false,
+   "name":"input",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
+   "isJob":true,
+   "log":true,
+   "longjob":false,
+   "name":"init",
+   "period":0,
+   "state":"new",
    "timeout":0
   },
   {
    "actionKey":"0eef386c3345ab46ac9e6ab5e7ab5ede",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"stop",
@@ -50,9 +52,7 @@
   },
   {
    "actionKey":"bad649376a832a41cfd6ea3e2abba8a1",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"start",
@@ -62,9 +62,7 @@
   },
   {
    "actionKey":"5e9a5696313033c5d72307d0fa9dc808",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"monitor",
@@ -74,9 +72,7 @@
   },
   {
    "actionKey":"466df1c54ec402ed99795789a758109e",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"halt",
@@ -86,9 +82,7 @@
   },
   {
    "actionKey":"1f6c3c2e89ab6d2efbc4bd1efebb73a7",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"check_up",
@@ -98,9 +92,7 @@
   },
   {
    "actionKey":"2a5e4802ad31c94e48d73a62480cc23a",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"check_down",
@@ -110,9 +102,7 @@
   },
   {
    "actionKey":"18720d7eaf125a87ad1201c2688dda24",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"check_requirements",
@@ -122,9 +112,7 @@
   },
   {
    "actionKey":"7dc25e7588a75d5b3511951f4117fc23",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"cleanup",
@@ -134,9 +122,7 @@
   },
   {
    "actionKey":"c1bca378f600f40d52aee3fe58e93d71",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"data_export",
@@ -146,9 +132,7 @@
   },
   {
    "actionKey":"99ff12fa0d5f604410c7946731e69ecb",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"data_import",
@@ -158,9 +142,7 @@
   },
   {
    "actionKey":"30c658a0ac834cade6b5f1673f2ed3e0",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"uninstall",
@@ -170,9 +152,7 @@
   },
   {
    "actionKey":"12a3e294623999b86a94326163610df9",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"removedata",
@@ -182,9 +162,7 @@
   },
   {
    "actionKey":"ebd7904eedb1561e323a6d519ca6279d",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"consume",
@@ -194,9 +172,7 @@
   },
   {
    "actionKey":"15fa1049656910911e2b6a501997f6fc",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"action_pre_",
@@ -206,9 +182,7 @@
   },
   {
    "actionKey":"bd3429e2f2716973e27b7f254034652a",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"action_post_",
@@ -218,9 +192,7 @@
   },
   {
    "actionKey":"4f0c618232d512a3e4cbddc387d6ce7e",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"init_actions_",
@@ -230,9 +202,7 @@
   },
   {
    "actionKey":"297e8a3a8a0c88012943599d62f6beeb",
-   "errorNr":0,
    "isJob":true,
-   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"delete",
@@ -241,32 +211,40 @@
    "timeout":0
   }
  ],
- "actorKey":"8955547c8d3d821c231b10343333fca9",
- "actorName":"sshkey",
- "consumers":[
-  {
-   "actorName":"node.ovc",
-   "key":"36b19c4087dccee6751a075de686d561",
-   "serviceName":"demo"
-  },
-  {
-   "actorName":"os.ssh.ubuntu",
-   "key":"4fcffa7eadbb1835ce2bdace0b7c8436",
-   "serviceName":"demo"
-  }
- ],
- "dataSchema":"@0xaf4e2a542f11b714;\nstruct Schema {\n\tkeyPath @0 :Text;\n\tkeyName @1 :Text;\n\tkeyPassphrase @2 :Text;\n\tkeyPriv @3 :Text;\n\tkeyPub @4 :Text;\n}\n",
+ "dataUI":"",
  "eventFilters":[
 
  ],
+ "flists":[
+
+ ],
  "gitRepo":{
-  "path":"services\/sshkey!id_rsa.pub",
+  "path":"",
   "url":"jdhsjhds:"
  },
- "key":"fda74eaa45a79b092c8e4645447249d4",
- "name":"id_rsa.pub",
- "parent":{
-
+ "name":"os.ssh.ubuntu",
+ "origin":{
+  "gitUrl":"https:\/\/github.com\/jumpscale\/ays9.git",
+  "path":"templates\/os\/os.ssh.ubuntu\/"
  },
- "state":"ok"
+ "parent":{
+  "actorRole":"node",
+  "argname":"node",
+  "auto":false,
+  "maxServices":1,
+  "minServices":1,
+  "optional":false
+ },
+ "producers":[
+  {
+   "actorRole":"sshkey",
+   "argname":"sshkey",
+   "auto":true,
+   "maxServices":100,
+   "minServices":1,
+   "optional":false
+  }
+ ],
+ "serviceDataSchema":"\n@0x92cba4b182ff7e26;\nstruct Schema {\n\tnode @0 :Text;\n\tsshkey @1 :Text;\n\tsshAddr @2 :Text;\n\tsshPort @3 :Int64 = 0;\n\n}\n",
+ "state":"new"
 }
