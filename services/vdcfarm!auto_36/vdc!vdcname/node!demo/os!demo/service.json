@@ -4,12 +4,12 @@
    "actionKey":"9e6e29a0e888e41e34cd43560a73c324",
    "errorNr":0,
    "isJob":true,
-   "lastRun":0,
+   "lastRun":1511863475,
    "log":true,
    "longjob":false,
    "name":"install",
    "period":0,
-   "state":"scheduled",
+   "state":"ok",
    "timeout":0
   },
   {
