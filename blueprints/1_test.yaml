@@ -1,3 +1,5 @@
+sshkey__id_rsa:
+ 
 g8client__env:
     url: 'be-g8-4.demo.greenitglobe.com'
     login: 'hossam'
