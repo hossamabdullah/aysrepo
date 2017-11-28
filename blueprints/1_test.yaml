@@ -16,13 +16,20 @@ vdc__vdcname:
 disk.ovc__myDisk:
   size: 10
 
-# create the vm.
-# expose ports 22. Map it to 2210.
 node.ovc__demo:
     bootdisk.size: 50
     os.image: 'Ubuntu 16.04 x64'
     disk:
       - 'myDisk'
+
+os.ssh.ubuntu__ovh4:
+  sshAddr: 'localhost'
+  sshPort: 22
+  sshkey: 'id_rsa'
+  node: 'demo'
+
+app_docker__dockerapp:
+  os: 'ovh4'
 
 actions:
   - action: install

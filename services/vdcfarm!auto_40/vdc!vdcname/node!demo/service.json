@@ -76,7 +76,7 @@
    "actionKey":"bc1d84e19e6e2ccdb01f3a5cc710b713",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511865987,
+   "lastRun":1511870359,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -88,7 +88,7 @@
    "actionKey":"af420c12820a09a687aab8b4fcd08ea5",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511865987,
+   "lastRun":1511870359,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -112,12 +112,12 @@
    "actionKey":"57d84f4163c6a19b395ff865767aba5b",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511866012,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"install",
    "period":0,
-   "state":"ok",
+   "state":"scheduled",
    "timeout":0
   },
   {
@@ -553,13 +553,18 @@
    "timeout":0
   }
  ],
- "actorKey":"e101bb02d9415016c3f7e22e27b170b5",
+ "actorKey":"87b27f3bb3460b930b54a4106b1becf6",
  "actorName":"node.ovc",
  "consumers":[
   {
    "actorName":"os.ssh.ubuntu",
-   "key":"d3a9789a974c2d6986d7e873422d527f",
+   "key":"a8d22eb5fe7baf4c91b73a3cc912a129",
    "serviceName":"demo"
+  },
+  {
+   "actorName":"os.ssh.ubuntu",
+   "key":"7ecab9e5a6ad7e157af5a637ba832eb3",
+   "serviceName":"ovh4"
   }
  ],
  "dataSchema":"\n@0xd37ff48ad935931f;\nstruct Schema {\n\tdescription @0 :Text;\n\tbootdiskSize @1 :Int64 = 10;\n\tmemory @2 :Int64 = 1;\n\tsizeID @3 :Int64 = -1;\n\tosImage @4 :Text = \"Ubuntu 15.10\";\n\tports @5 :List(Text);\n\tmachineId @6 :Int64 = 0;\n\tipPublic @7 :Text;\n\tipPrivate @8 :Text;\n\tsshLogin @9 :Text;\n\tsshPassword @10 :Text;\n\tvdc @11 :Text;\n\tdisk @12 :List(Text);\n\tsshkey @13 :Text;\n\tsshAddr @14 :Text;\n\tsshPort @15 :Int64 = 0;\n\tovfLink @16 :Text;\n\tovfUsername @17 :Text;\n\tovfPassword @18 :Text;\n\tovfPath @19 :Text;\n\tovfCallbackUrl @20 :Text;\n\tstackID @21 :Int64 = -1;\n\tvmHistory @22 :Text;\n\tuservdc @23 :List(UserVdcEntry);\n\tcloneName @24 :Text;\n\tsnapshots @25 :List(Text);\n\tsnapshotEpoch @26 :Text;\n\tsshAuthorized @27 :Bool = false;\n\tvmInfoCallback @28 :Text;\n\n\tstruct UserVdcEntry {\n\t\tname @0 :Text;\n\t\taccesstype @1 :Text = \"R\";\n\t}\n}\n",
@@ -567,30 +572,30 @@
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_37\/vdc!vdcname\/node!demo",
+  "path":"services\/vdcfarm!auto_40\/vdc!vdcname\/node!demo",
   "url":"jdhsjhds:"
  },
- "key":"2bc2410163f3abc4575d2df671c8c45f",
+ "key":"b97919cf1f360e60c5edeef0a350853f",
  "name":"demo",
  "parent":{
   "actorName":"vdc",
-  "key":"b77b43d6cb81fc7c0c4e9a148bac1ef6",
+  "key":"40fdcc81352f206feaf9c04a77ec4e16",
   "serviceName":"vdcname"
  },
  "producers":[
   {
    "actorName":"disk.ovc",
-   "key":"5ef31f36ccb05fb01df970d4488feb54",
+   "key":"f78a23953627d671b4a00bb68a2af038",
    "serviceName":"myDisk"
   },
   {
    "actorName":"sshkey",
-   "key":"99f10cc524c8434df4bfe96f0a0d0cab",
+   "key":"2e1e78e75d0516eaf4ca8228fb72c5d1",
    "serviceName":"id_rsa"
   },
   {
    "actorName":"vdc",
-   "key":"b77b43d6cb81fc7c0c4e9a148bac1ef6",
+   "key":"40fdcc81352f206feaf9c04a77ec4e16",
    "serviceName":"vdcname"
   }
  ],

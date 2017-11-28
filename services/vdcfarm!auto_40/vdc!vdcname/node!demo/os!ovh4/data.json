@@ -1,0 +1,6 @@
+{
+ "node":"demo",
+ "sshAddr":"localhost",
+ "sshPort":22,
+ "sshkey":"id_rsa"
+}

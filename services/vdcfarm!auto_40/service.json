@@ -1,7 +1,7 @@
 {
  "actions":[
   {
-   "actionKey":"de5ef6aac5e9fdce4e1988944ef0422a",
+   "actionKey":"5eb8490ce3e79e477a670131cd481921",
    "errorNr":0,
    "isJob":true,
    "lastRun":1511870358,
@@ -10,18 +10,6 @@
    "name":"input",
    "period":0,
    "state":"ok",
-   "timeout":0
-  },
-  {
-   "actionKey":"18412a16dce33a5a4f67d0b8a232374f",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"processChange",
-   "period":0,
-   "state":"new",
    "timeout":0
   },
   {
@@ -253,35 +241,25 @@
    "timeout":0
   }
  ],
- "actorKey":"9147164ab1745e22de7eea6c5c060dca",
- "actorName":"g8client",
+ "actorKey":"d4a66ed900f48caec0e1846297f12374",
+ "actorName":"vdcfarm",
  "consumers":[
   {
    "actorName":"vdc",
    "key":"40fdcc81352f206feaf9c04a77ec4e16",
    "serviceName":"vdcname"
-  },
-  {
-   "actorName":"account",
-   "key":"d80e98e90ae078cd9203c2e7bffb6e4a",
-   "serviceName":"hossam"
-  },
-  {
-   "actorName":"disk.ovc",
-   "key":"f78a23953627d671b4a00bb68a2af038",
-   "serviceName":"myDisk"
   }
  ],
- "dataSchema":"\n@0x822d58b0388d9011;\nstruct Schema {\n\turl @0 :Text;\n\tlogin @1 :Text;\n\tpassword @2 :Text;\n\tjwt @3 :Text;\n\taccount @4 :Text;\n\tport @5 :Int64 = 443;\n\n}\n",
+ "dataSchema":"\n@0xc9068ab71f0c803d;\nstruct Schema {\n\tdescription @0 :Text;\n\n}\n",
  "eventFilters":[
 
  ],
  "gitRepo":{
-  "path":"services\/g8client!env",
+  "path":"services\/vdcfarm!auto_40",
   "url":"jdhsjhds:"
  },
- "key":"9a919e9ed26c86d6260088fba1ccbb2d",
- "name":"env",
+ "key":"5e9ce71a0263c13539c2625b6fca23b3",
+ "name":"auto_40",
  "parent":{
 
  },

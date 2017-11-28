@@ -1,7 +1,5 @@
 {
- "description":"disk",
- "devicename":"vdb",
- "diskId":4922,
+ "diskId":0,
  "maxIOPS":0,
  "readBytesSec":0,
  "readBytesSecMax":0,
