@@ -1,22 +1,10 @@
 {
  "actions":[
   {
-   "actionKey":"bae59aa5ef714c1c4298aa95d8802c02",
-   "errorNr":0,
-   "isJob":false,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"init_actions_",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"7535f668de477726491f90311e3ec0e9",
+   "actionKey":"5eb8490ce3e79e477a670131cd481921",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511858338,
+   "lastRun":1511861640,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -25,10 +13,10 @@
    "timeout":0
   },
   {
-   "actionKey":"849e469e7b71762d4c05763cfd26048a",
+   "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511858339,
+   "lastRun":1511861640,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -37,19 +25,7 @@
    "timeout":0
   },
   {
-   "actionKey":"ffe90078cfec44eb3b7ae3ef781edeff",
-   "errorNr":0,
-   "isJob":false,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"authorization_user",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"104e3aa162031787839f9c7e2266c332",
+   "actionKey":"da4bbe0e6b26b65452efffa965141da9",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
@@ -58,78 +34,6 @@
    "name":"install",
    "period":0,
    "state":"scheduled",
-   "timeout":0
-  },
-  {
-   "actionKey":"3fcfcdb81da9cf6cc46fe857f97a8be9",
-   "errorNr":0,
-   "isJob":false,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"get_user_accessright",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"f3d9e726b04892db782171583af795c1",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"processChange",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"55431bfac78a77193814d5daff9d99f5",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"uninstall",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"1ed7fd7623427fa22d003a3a28cc85a7",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"enable",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"f26ef118e9e74efb595d9c3b5f9c7400",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"disable",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"52b0810bfa95e7b2a212d5ec5a7f906c",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"execute_routeros_script",
-   "period":0,
-   "state":"new",
    "timeout":0
   },
   {
@@ -253,6 +157,18 @@
    "timeout":0
   },
   {
+   "actionKey":"30c658a0ac834cade6b5f1673f2ed3e0",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"uninstall",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
    "actionKey":"12a3e294623999b86a94326163610df9",
    "errorNr":0,
    "isJob":true,
@@ -301,6 +217,18 @@
    "timeout":0
   },
   {
+   "actionKey":"4f0c618232d512a3e4cbddc387d6ce7e",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"init_actions_",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
    "actionKey":"297e8a3a8a0c88012943599d62f6beeb",
    "errorNr":0,
    "isJob":true,
@@ -313,46 +241,27 @@
    "timeout":0
   }
  ],
- "actorKey":"e605600f5719cc79fe2215946e161cc4",
- "actorName":"vdc",
+ "actorKey":"5a9dd7187032a847051c8f629500b294",
+ "actorName":"vdcfarm",
  "consumers":[
   {
-   "actorName":"node.ovc",
-   "key":"8fae84e2d02a9a4a91f3217a356ff4b7",
-   "serviceName":"demo"
+   "actorName":"vdc",
+   "key":"92f4f76715761bc4f5fe2189d2fcda13",
+   "serviceName":"vdcname"
   }
  ],
- "dataSchema":"\n@0xef6aaa2a895e7f18;\nstruct Schema {\n\tdescription @0 :Text;\n\tvdcfarm @1 :Text;\n\tg8client @2 :Text;\n\taccount @3 :Text;\n\tlocation @4 :Text;\n\tuservdc @5 :List(UserVdcEntry);\n\tallowedVMSizes @6 :List(Int64);\n\tcloudspaceID @7 :Int64 = 0;\n\tmaxMemoryCapacity @8 :Int64 = -1;\n\tmaxCPUCapacity @9 :Int64 = -1;\n\tmaxDiskCapacity @10 :Int64 = -1;\n\tmaxNumPublicIP @11 :Int64 = -1;\n\texternalNetworkID @12 :Int64 = -1;\n\tmaxNetworkPeerTransfer @13 :Int64 = -1;\n\tdisabled @14 :Bool = false;\n\tscript @15 :Text;\n\n\tstruct UserVdcEntry {\n\t\tname @0 :Text;\n\t\taccesstype @1 :Text;\n\t}\n\n}\n",
+ "dataSchema":"\n@0xc9068ab71f0c803d;\nstruct Schema {\n\tdescription @0 :Text;\n\n}\n",
  "eventFilters":[
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_31\/vdc!vdcname",
+  "path":"services\/vdcfarm!auto_32",
   "url":"jdhsjhds:"
  },
- "key":"ec64bd3d2c8af695961adccacb6351e2",
- "name":"vdcname",
+ "key":"b4758acba2b8372bdaa99352ece3e599",
+ "name":"auto_32",
  "parent":{
-  "actorName":"vdcfarm",
-  "key":"e6b74bb0f126b2dd3a13e168c87982c8",
-  "serviceName":"auto_31"
+
  },
- "producers":[
-  {
-   "actorName":"g8client",
-   "key":"96b577e44a75e2863fef4d990f03039a",
-   "serviceName":"env"
-  },
-  {
-   "actorName":"vdcfarm",
-   "key":"e6b74bb0f126b2dd3a13e168c87982c8",
-   "serviceName":"auto_31"
-  },
-  {
-   "actorName":"account",
-   "key":"8af8cdd4776d15a56ecd1ddf74aa1af1",
-   "serviceName":"hossam"
-  }
- ],
  "state":"ok"
 }

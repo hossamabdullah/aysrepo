@@ -28,7 +28,7 @@
    "actionKey":"5eb8490ce3e79e477a670131cd481921",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511858339,
+   "lastRun":1511861641,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -40,7 +40,7 @@
    "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511858339,
+   "lastRun":1511861641,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -253,32 +253,32 @@
    "timeout":0
   }
  ],
- "actorKey":"017c00924b97ba641ec88766bedbd78d",
+ "actorKey":"7936c0b81587dcd7f20366fba8724330",
  "actorName":"os.ssh.ubuntu",
  "dataSchema":"\n@0x92cba4b182ff7e26;\nstruct Schema {\n\tnode @0 :Text;\n\tsshkey @1 :Text;\n\tsshAddr @2 :Text;\n\tsshPort @3 :Int64 = 0;\n\n}\n",
  "eventFilters":[
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_31\/vdc!vdcname\/node!demo\/os!demo",
+  "path":"services\/vdcfarm!auto_32\/vdc!vdcname\/node!demo\/os!demo",
   "url":"jdhsjhds:"
  },
- "key":"4c54229f4900915cb842d5cc4ccf8dfc",
+ "key":"f7964becaf36f050aa84e9e13caea3c8",
  "name":"demo",
  "parent":{
   "actorName":"node.ovc",
-  "key":"8fae84e2d02a9a4a91f3217a356ff4b7",
+  "key":"e8e3dcc3652720b8bab9e900e8bfb3be",
   "serviceName":"demo"
  },
  "producers":[
   {
    "actorName":"sshkey",
-   "key":"63bc3c36b5899a69620d1bb56d665da6",
+   "key":"8f2a4222a09c75249981f652c649199c",
    "serviceName":"id_rsa"
   },
   {
    "actorName":"node.ovc",
-   "key":"8fae84e2d02a9a4a91f3217a356ff4b7",
+   "key":"e8e3dcc3652720b8bab9e900e8bfb3be",
    "serviceName":"demo"
   }
  ],
