@@ -1,19 +1,7 @@
 {
  "actions":[
   {
-   "actionKey":"6219622506dad7ff169f87ffcc8c264a",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":1511870875,
-   "log":true,
-   "longjob":false,
-   "name":"input",
-   "period":0,
-   "state":"ok",
-   "timeout":0
-  },
-  {
-   "actionKey":"842dafb343809ebb7e0b14952a3acd96",
+   "actionKey":"9e6e29a0e888e41e34cd43560a73c324",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
@@ -25,15 +13,39 @@
    "timeout":0
   },
   {
-   "actionKey":"bad649376a832a41cfd6ea3e2abba8a1",
+   "actionKey":"0390666cc195aa2651931927c3996bc9",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
    "log":true,
    "longjob":false,
-   "name":"start",
+   "name":"getExecutor",
    "period":0,
    "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"5eb8490ce3e79e477a670131cd481921",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":1511871113,
+   "log":true,
+   "longjob":false,
+   "name":"input",
+   "period":0,
+   "state":"ok",
+   "timeout":0
+  },
+  {
+   "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":1511871113,
+   "log":true,
+   "longjob":false,
+   "name":"init",
+   "period":0,
+   "state":"ok",
    "timeout":0
   },
   {
@@ -49,6 +61,18 @@
    "timeout":0
   },
   {
+   "actionKey":"bad649376a832a41cfd6ea3e2abba8a1",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"start",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
    "actionKey":"5e9a5696313033c5d72307d0fa9dc808",
    "errorNr":0,
    "isJob":true,
@@ -58,18 +82,6 @@
    "name":"monitor",
    "period":0,
    "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":1511870875,
-   "log":true,
-   "longjob":false,
-   "name":"init",
-   "period":0,
-   "state":"ok",
    "timeout":0
   },
   {
@@ -241,28 +253,40 @@
    "timeout":0
   }
  ],
- "actorKey":"ddab376a03f9b838f136778881de271a",
- "actorName":"app_docker",
- "dataSchema":"\n@0xdb50cbb218e7a21f;\nstruct Schema {\n\tos @0 :Text;\n\n}\n",
+ "actorKey":"36c22553fb8be8ba59fd4b2cb193be15",
+ "actorName":"os.ssh.ubuntu",
+ "consumers":[
+  {
+   "actorName":"app_docker",
+   "key":"fd731e8dc73db6571257b588343f80d5",
+   "serviceName":"dockerapp"
+  }
+ ],
+ "dataSchema":"\n@0x92cba4b182ff7e26;\nstruct Schema {\n\tnode @0 :Text;\n\tsshkey @1 :Text;\n\tsshAddr @2 :Text;\n\tsshPort @3 :Int64 = 0;\n\n}\n",
  "eventFilters":[
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_42\/vdc!vdcname\/node!demo\/os!ovh4\/app_docker!dockerapp",
+  "path":"services\/vdcfarm!auto_43\/vdc!vdcname\/node!demo\/os!ovh4",
   "url":"jdhsjhds:"
  },
- "key":"e534d7ed8b41d9e574bd8948ce63ed93",
- "name":"dockerapp",
+ "key":"60c822eabc3f3c607a0eefa58df78395",
+ "name":"ovh4",
  "parent":{
-  "actorName":"os.ssh.ubuntu",
-  "key":"c82ff080d628080f87c675bc5a259034",
-  "serviceName":"ovh4"
+  "actorName":"node.ovc",
+  "key":"69cd8b05e9e5c649a05eaf8df7c972ec",
+  "serviceName":"demo"
  },
  "producers":[
   {
-   "actorName":"os.ssh.ubuntu",
-   "key":"c82ff080d628080f87c675bc5a259034",
-   "serviceName":"ovh4"
+   "actorName":"sshkey",
+   "key":"d18c9063632f17363a712dee7b6a216d",
+   "serviceName":"id_rsa"
+  },
+  {
+   "actorName":"node.ovc",
+   "key":"69cd8b05e9e5c649a05eaf8df7c972ec",
+   "serviceName":"demo"
   }
  ],
  "state":"ok"
