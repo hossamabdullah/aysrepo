@@ -21,9 +21,7 @@ def install (job):
     password = node.model.data.sshPassword if node.model.data.sshPassword != '' else None
     passphrase = sshkey.model.data.keyPassphrase if sshkey.model.data.keyPassphrase != '' else None
     executor = j.tools.executor.getSSHBased(addr=node.model.data.ipPublic, port=service.model.data.sshPort,
-                                            login=node.model.data.sshLogin, passwd=password,
-                                            allow_agent=True, look_for_keys=True, timeout=5, usecache=False,
-                                            passphrase=passphrase, key_filename=key_path)
+                                            timeout=5, usecache=False,)
     executor.prefab.system.ssh.authorize("root", sshkey.model.data.keyPub)
     j.tools.prefab.resetAll()
     service.saveAll()
