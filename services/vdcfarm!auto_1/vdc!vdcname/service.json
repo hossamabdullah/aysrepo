@@ -16,7 +16,7 @@
    "actionKey":"7535f668de477726491f90311e3ec0e9",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511871385,
+   "lastRun":1512286495,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -28,7 +28,7 @@
    "actionKey":"849e469e7b71762d4c05763cfd26048a",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511871385,
+   "lastRun":1512286495,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -52,12 +52,12 @@
    "actionKey":"104e3aa162031787839f9c7e2266c332",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511871398,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"install",
    "period":0,
-   "state":"ok",
+   "state":"scheduled",
    "timeout":0
   },
   {
@@ -313,12 +313,12 @@
    "timeout":0
   }
  ],
- "actorKey":"d334fa82328588c85d5ed709a3569da1",
+ "actorKey":"a7cd7bcc024dfc5a5d6e593af4e1ab78",
  "actorName":"vdc",
  "consumers":[
   {
    "actorName":"node.ovc",
-   "key":"1f07b2dc7148ebf8b725b1f7fc8ab720",
+   "key":"7f59e43a765376511c2d42751ce8a594",
    "serviceName":"demo"
   }
  ],
@@ -327,30 +327,30 @@
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_44\/vdc!vdcname",
+  "path":"services\/vdcfarm!auto_1\/vdc!vdcname",
   "url":"jdhsjhds:"
  },
- "key":"ca5ea8e3ff52909525b13a1335d3dd64",
+ "key":"ed5962c454bcb4b18f7060ca166c3b44",
  "name":"vdcname",
  "parent":{
   "actorName":"vdcfarm",
-  "key":"06f0cbabca416835d995f7be381c96b7",
-  "serviceName":"auto_44"
+  "key":"6191f4299819cff94e5a429fdb2db2df",
+  "serviceName":"auto_1"
  },
  "producers":[
   {
    "actorName":"g8client",
-   "key":"4dc38e5876d1364eb1dbabc02314fa0c",
+   "key":"a79d180435cfd72f0a94458824c5f614",
    "serviceName":"env"
   },
   {
    "actorName":"vdcfarm",
-   "key":"06f0cbabca416835d995f7be381c96b7",
-   "serviceName":"auto_44"
+   "key":"6191f4299819cff94e5a429fdb2db2df",
+   "serviceName":"auto_1"
   },
   {
    "actorName":"account",
-   "key":"c37230200d51c092fe6d94d2b8deb241",
+   "key":"050e5a96a62d48c64c359775f0206bdc",
    "serviceName":"hossam"
   }
  ],

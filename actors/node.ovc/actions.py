@@ -383,7 +383,7 @@ def import_ (job):
 def init_actions_ (service, args):
     '''
     this needs to returns an array of actions representing the dependencies between actions.
-Looks at ACTION_DEPS in this module for an example of what is expected
+s at ACTION_DEPS in this module for an example of what is expected
     '''
     action_required = args.get('action_required')
     if action_required in ['stop', 'uninstall']:
@@ -480,8 +480,8 @@ def add_disk (job):
 def open_port (job):
     '''
     Open port in the firewall by creating port forward
-if public_port is None, auto select available port
-Return the public port assigned
+ublic_port is None, auto select available port
+rn the public port assigned
     '''
     requested_port = job.model.args['requested_port']
     public_port = job.model.args.get('public_port', None)

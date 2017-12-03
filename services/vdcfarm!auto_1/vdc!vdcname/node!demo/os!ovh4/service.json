@@ -4,12 +4,12 @@
    "actionKey":"9e6e29a0e888e41e34cd43560a73c324",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511871420,
+   "lastRun":0,
    "log":true,
    "longjob":false,
    "name":"install",
    "period":0,
-   "state":"ok",
+   "state":"scheduled",
    "timeout":0
   },
   {
@@ -28,7 +28,7 @@
    "actionKey":"5eb8490ce3e79e477a670131cd481921",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511871386,
+   "lastRun":1512286496,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -40,7 +40,7 @@
    "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1511871386,
+   "lastRun":1512286496,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -253,32 +253,39 @@
    "timeout":0
   }
  ],
- "actorKey":"42a2506f049429f311a4efef9039d71c",
+ "actorKey":"830f4d6f505ffe5e90657799995d2e2b",
  "actorName":"os.ssh.ubuntu",
+ "consumers":[
+  {
+   "actorName":"app_docker",
+   "key":"d626733bc0314afbeca6c11218a821dc",
+   "serviceName":"dockerapp"
+  }
+ ],
  "dataSchema":"\n@0x92cba4b182ff7e26;\nstruct Schema {\n\tnode @0 :Text;\n\tsshkey @1 :Text;\n\tsshAddr @2 :Text;\n\tsshPort @3 :Int64 = 0;\n\n}\n",
  "eventFilters":[
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_44\/vdc!vdcname\/node!demo\/os!demo",
+  "path":"services\/vdcfarm!auto_1\/vdc!vdcname\/node!demo\/os!ovh4",
   "url":"jdhsjhds:"
  },
- "key":"dde8380a5a0dfb3398e15933753a329a",
- "name":"demo",
+ "key":"1db223d78fbb84a517712d488b262bd4",
+ "name":"ovh4",
  "parent":{
   "actorName":"node.ovc",
-  "key":"1f07b2dc7148ebf8b725b1f7fc8ab720",
+  "key":"7f59e43a765376511c2d42751ce8a594",
   "serviceName":"demo"
  },
  "producers":[
   {
    "actorName":"sshkey",
-   "key":"68cb7c530083adffc9cc8ca8fe0e405d",
+   "key":"1979d39b0da0afef09daeda8798e2672",
    "serviceName":"id_rsa"
   },
   {
    "actorName":"node.ovc",
-   "key":"1f07b2dc7148ebf8b725b1f7fc8ab720",
+   "key":"7f59e43a765376511c2d42751ce8a594",
    "serviceName":"demo"
   }
  ],
