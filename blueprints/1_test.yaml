@@ -11,7 +11,7 @@ vdc__vdcname:
     description: 'vdc for demo'
     g8client: 'env'
     account: 'hossam'
-    location: 'be-g8-4'
+    location: 'be-g8-1'
 
 disk.ovc__myDisk:
   size: 10
