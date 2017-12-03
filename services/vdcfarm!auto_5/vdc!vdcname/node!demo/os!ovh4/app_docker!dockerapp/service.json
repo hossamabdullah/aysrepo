@@ -1,22 +1,10 @@
 {
  "actions":[
   {
-   "actionKey":"bae59aa5ef714c1c4298aa95d8802c02",
-   "errorNr":0,
-   "isJob":false,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"init_actions_",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"7535f668de477726491f90311e3ec0e9",
+   "actionKey":"6219622506dad7ff169f87ffcc8c264a",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1512286896,
+   "lastRun":1512286994,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -25,31 +13,7 @@
    "timeout":0
   },
   {
-   "actionKey":"849e469e7b71762d4c05763cfd26048a",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":1512286896,
-   "log":true,
-   "longjob":false,
-   "name":"init",
-   "period":0,
-   "state":"ok",
-   "timeout":0
-  },
-  {
-   "actionKey":"ffe90078cfec44eb3b7ae3ef781edeff",
-   "errorNr":0,
-   "isJob":false,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"authorization_user",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"104e3aa162031787839f9c7e2266c332",
+   "actionKey":"842dafb343809ebb7e0b14952a3acd96",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
@@ -61,73 +25,13 @@
    "timeout":0
   },
   {
-   "actionKey":"3fcfcdb81da9cf6cc46fe857f97a8be9",
-   "errorNr":0,
-   "isJob":false,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"get_user_accessright",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"f3d9e726b04892db782171583af795c1",
+   "actionKey":"bad649376a832a41cfd6ea3e2abba8a1",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
    "log":true,
    "longjob":false,
-   "name":"processChange",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"55431bfac78a77193814d5daff9d99f5",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"uninstall",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"1ed7fd7623427fa22d003a3a28cc85a7",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"enable",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"f26ef118e9e74efb595d9c3b5f9c7400",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"disable",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
-   "actionKey":"52b0810bfa95e7b2a212d5ec5a7f906c",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"execute_routeros_script",
+   "name":"start",
    "period":0,
    "state":"new",
    "timeout":0
@@ -145,18 +49,6 @@
    "timeout":0
   },
   {
-   "actionKey":"bad649376a832a41cfd6ea3e2abba8a1",
-   "errorNr":0,
-   "isJob":true,
-   "lastRun":0,
-   "log":true,
-   "longjob":false,
-   "name":"start",
-   "period":0,
-   "state":"new",
-   "timeout":0
-  },
-  {
    "actionKey":"5e9a5696313033c5d72307d0fa9dc808",
    "errorNr":0,
    "isJob":true,
@@ -166,6 +58,18 @@
    "name":"monitor",
    "period":0,
    "state":"new",
+   "timeout":0
+  },
+  {
+   "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":1512286994,
+   "log":true,
+   "longjob":false,
+   "name":"init",
+   "period":0,
+   "state":"ok",
    "timeout":0
   },
   {
@@ -253,6 +157,18 @@
    "timeout":0
   },
   {
+   "actionKey":"30c658a0ac834cade6b5f1673f2ed3e0",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"uninstall",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
    "actionKey":"12a3e294623999b86a94326163610df9",
    "errorNr":0,
    "isJob":true,
@@ -301,6 +217,18 @@
    "timeout":0
   },
   {
+   "actionKey":"4f0c618232d512a3e4cbddc387d6ce7e",
+   "errorNr":0,
+   "isJob":true,
+   "lastRun":0,
+   "log":true,
+   "longjob":false,
+   "name":"init_actions_",
+   "period":0,
+   "state":"new",
+   "timeout":0
+  },
+  {
    "actionKey":"297e8a3a8a0c88012943599d62f6beeb",
    "errorNr":0,
    "isJob":true,
@@ -313,45 +241,28 @@
    "timeout":0
   }
  ],
- "actorKey":"4360444d8920e9bbbe710ec559a766e1",
- "actorName":"vdc",
- "consumers":[
-  {
-   "actorName":"node.ovc",
-   "key":"713ddcc99c6cde8beb9235f05097409e",
-   "serviceName":"demo"
-  }
- ],
- "dataSchema":"\n@0xef6aaa2a895e7f18;\nstruct Schema {\n\tdescription @0 :Text;\n\tvdcfarm @1 :Text;\n\tg8client @2 :Text;\n\taccount @3 :Text;\n\tlocation @4 :Text;\n\tuservdc @5 :List(UserVdcEntry);\n\tallowedVMSizes @6 :List(Int64);\n\tcloudspaceID @7 :Int64 = 0;\n\tmaxMemoryCapacity @8 :Int64 = -1;\n\tmaxCPUCapacity @9 :Int64 = -1;\n\tmaxDiskCapacity @10 :Int64 = -1;\n\tmaxNumPublicIP @11 :Int64 = -1;\n\texternalNetworkID @12 :Int64 = -1;\n\tmaxNetworkPeerTransfer @13 :Int64 = -1;\n\tdisabled @14 :Bool = false;\n\tscript @15 :Text;\n\n\tstruct UserVdcEntry {\n\t\tname @0 :Text;\n\t\taccesstype @1 :Text;\n\t}\n\n}\n",
+ "actorKey":"1a1ba8b4265bcd9ba1fc68e14d7e8a33",
+ "actorName":"app_docker",
+ "dataSchema":"\n@0xdb50cbb218e7a21f;\nstruct Schema {\n\tos @0 :Text;\n\n}\n",
  "eventFilters":[
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_4\/vdc!vdcname",
+  "path":"services\/vdcfarm!auto_5\/vdc!vdcname\/node!demo\/os!ovh4\/app_docker!dockerapp",
   "url":"jdhsjhds:"
  },
- "key":"f91b511e06a285108e5f70a161cea499",
- "name":"vdcname",
+ "key":"6d52eedb46c1af9d19b2b5be7d98779f",
+ "name":"dockerapp",
  "parent":{
-  "actorName":"vdcfarm",
-  "key":"f0086297f084248c2827abf1b91136ac",
-  "serviceName":"auto_4"
+  "actorName":"os.ssh.ubuntu",
+  "key":"495e7a5ca8fe8267cb2eaa30992e673c",
+  "serviceName":"ovh4"
  },
  "producers":[
   {
-   "actorName":"g8client",
-   "key":"4d5eaf1e9bb13d95e27b72d8c4a13d8d",
-   "serviceName":"env"
-  },
-  {
-   "actorName":"vdcfarm",
-   "key":"f0086297f084248c2827abf1b91136ac",
-   "serviceName":"auto_4"
-  },
-  {
-   "actorName":"account",
-   "key":"616be666fb67742fef3287d2e3e33fa0",
-   "serviceName":"hossam"
+   "actorName":"os.ssh.ubuntu",
+   "key":"495e7a5ca8fe8267cb2eaa30992e673c",
+   "serviceName":"ovh4"
   }
  ],
  "state":"ok"

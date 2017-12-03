@@ -1,7 +1,7 @@
 sshkey__id_rsa:
  
 g8client__env:
-    url: 'be-g8-1.demo.greenitglobe.com'
+    url: 'du-conv-2.demo.greenitglobe.com'
     login: 'hossam'
     password: 'cit_1234'
     account: 'hossam'
@@ -11,7 +11,7 @@ vdc__vdcname:
     description: 'vdc for demo'
     g8client: 'env'
     account: 'hossam'
-    location: 'be-g8-1'
+    location: 'du-conv-2'
 
 disk.ovc__myDisk:
   size: 10
