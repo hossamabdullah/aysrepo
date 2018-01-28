@@ -11,7 +11,7 @@
    "timeout":0
   },
   {
-   "actionKey":"32af738cccc4f758bb6cf710c2aaa39b",
+   "actionKey":"1e0a56144df6e321dd929e5ea421ba4a",
    "isJob":false,
    "log":true,
    "longjob":false,
@@ -21,7 +21,7 @@
    "timeout":0
   },
   {
-   "actionKey":"301ffb6fbdd2a2ab177b2806872ecc34",
+   "actionKey":"5fa5fa18a979d36ef64fa7ceae4a47e9",
    "isJob":false,
    "log":true,
    "longjob":false,
@@ -31,7 +31,7 @@
    "timeout":0
   },
   {
-   "actionKey":"d7c4320b0b65a982694c6ae389637a87",
+   "actionKey":"10014a4bcdec9b09102bbe29167efbe4",
    "isJob":false,
    "log":true,
    "longjob":false,
@@ -41,11 +41,11 @@
    "timeout":0
   },
   {
-   "actionKey":"a434c28d04e87f746edb25fe39e0a295",
+   "actionKey":"a4fbc35ec4fec045780084953af1dd46",
    "isJob":false,
    "log":true,
    "longjob":false,
-   "name":"_ssh_authorize",
+   "name":"_ssh_authorize_root",
    "period":0,
    "state":"new",
    "timeout":0
@@ -91,7 +91,7 @@
    "timeout":0
   },
   {
-   "actionKey":"57d84f4163c6a19b395ff865767aba5b",
+   "actionKey":"3ae3e63c948c99ab3c99e73e55bcba7a",
    "isJob":true,
    "log":true,
    "longjob":false,
@@ -111,7 +111,7 @@
    "timeout":0
   },
   {
-   "actionKey":"6d9ad23dcd3f22f612cdb1d6253321e7",
+   "actionKey":"6321e89c15405f62c7f9abd974bd5e02",
    "isJob":true,
    "log":true,
    "longjob":false,
@@ -161,7 +161,7 @@
    "timeout":0
   },
   {
-   "actionKey":"ddf8d1e9107e332d9e83182040cf584f",
+   "actionKey":"bcc770e94584bc0a204fc50748e3e5e8",
    "isJob":true,
    "log":true,
    "longjob":false,
@@ -475,7 +475,7 @@
  "name":"node.ovc",
  "origin":{
   "gitUrl":"git@github.com:openvcloud\/ays_templates.git",
-  "path":"templates\/node.ovc\/"
+  "path":"templates\/node.ovc"
  },
  "parent":{
   "actorRole":"vdc",

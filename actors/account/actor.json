@@ -265,7 +265,7 @@
  "name":"account",
  "origin":{
   "gitUrl":"git@github.com:openvcloud\/ays_templates.git",
-  "path":"templates\/account\/"
+  "path":"templates\/account"
  },
  "producers":[
   {

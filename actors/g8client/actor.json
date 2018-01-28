@@ -225,7 +225,7 @@
  "name":"g8client",
  "origin":{
   "gitUrl":"git@github.com:openvcloud\/ays_templates.git",
-  "path":"templates\/g8client\/"
+  "path":"templates\/g8client"
  },
  "serviceDataSchema":"\n@0x822d58b0388d9011;\nstruct Schema {\n\turl @0 :Text;\n\tlogin @1 :Text;\n\tpassword @2 :Text;\n\tjwt @3 :Text;\n\taccount @4 :Text;\n\tport @5 :Int64 = 443;\n\n}\n",
  "state":"new"

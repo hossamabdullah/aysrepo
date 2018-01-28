@@ -13,7 +13,7 @@
    "timeout":0
   },
   {
-   "actionKey":"32af738cccc4f758bb6cf710c2aaa39b",
+   "actionKey":"1e0a56144df6e321dd929e5ea421ba4a",
    "errorNr":0,
    "isJob":false,
    "lastRun":0,
@@ -25,7 +25,7 @@
    "timeout":0
   },
   {
-   "actionKey":"301ffb6fbdd2a2ab177b2806872ecc34",
+   "actionKey":"5fa5fa18a979d36ef64fa7ceae4a47e9",
    "errorNr":0,
    "isJob":false,
    "lastRun":0,
@@ -37,7 +37,7 @@
    "timeout":0
   },
   {
-   "actionKey":"d7c4320b0b65a982694c6ae389637a87",
+   "actionKey":"10014a4bcdec9b09102bbe29167efbe4",
    "errorNr":0,
    "isJob":false,
    "lastRun":0,
@@ -49,13 +49,13 @@
    "timeout":0
   },
   {
-   "actionKey":"a434c28d04e87f746edb25fe39e0a295",
+   "actionKey":"a4fbc35ec4fec045780084953af1dd46",
    "errorNr":0,
    "isJob":false,
    "lastRun":0,
    "log":true,
    "longjob":false,
-   "name":"_ssh_authorize",
+   "name":"_ssh_authorize_root",
    "period":0,
    "state":"new",
    "timeout":0
@@ -76,7 +76,7 @@
    "actionKey":"bc1d84e19e6e2ccdb01f3a5cc710b713",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1512286994,
+   "lastRun":1517144037,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -88,7 +88,7 @@
    "actionKey":"af420c12820a09a687aab8b4fcd08ea5",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1512286994,
+   "lastRun":1517144037,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -109,7 +109,7 @@
    "timeout":0
   },
   {
-   "actionKey":"57d84f4163c6a19b395ff865767aba5b",
+   "actionKey":"3ae3e63c948c99ab3c99e73e55bcba7a",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
@@ -133,7 +133,7 @@
    "timeout":0
   },
   {
-   "actionKey":"6d9ad23dcd3f22f612cdb1d6253321e7",
+   "actionKey":"6321e89c15405f62c7f9abd974bd5e02",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
@@ -193,7 +193,7 @@
    "timeout":0
   },
   {
-   "actionKey":"ddf8d1e9107e332d9e83182040cf584f",
+   "actionKey":"bcc770e94584bc0a204fc50748e3e5e8",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
@@ -553,18 +553,13 @@
    "timeout":0
   }
  ],
- "actorKey":"23fe13f76fd7cf7066e86464212e59a0",
+ "actorKey":"d9f1012b1b8ea534231afca87633bca3",
  "actorName":"node.ovc",
  "consumers":[
   {
    "actorName":"os.ssh.ubuntu",
-   "key":"e9694c97686b3e8a854bb9765a25b209",
+   "key":"f527fe34a7e78829c933e232f6b66443",
    "serviceName":"demo"
-  },
-  {
-   "actorName":"os.ssh.ubuntu",
-   "key":"495e7a5ca8fe8267cb2eaa30992e673c",
-   "serviceName":"ovh4"
   }
  ],
  "dataSchema":"\n@0xd37ff48ad935931f;\nstruct Schema {\n\tdescription @0 :Text;\n\tbootdiskSize @1 :Int64 = 10;\n\tmemory @2 :Int64 = 1;\n\tsizeID @3 :Int64 = -1;\n\tosImage @4 :Text = \"Ubuntu 15.10\";\n\tports @5 :List(Text);\n\tmachineId @6 :Int64 = 0;\n\tipPublic @7 :Text;\n\tipPrivate @8 :Text;\n\tsshLogin @9 :Text;\n\tsshPassword @10 :Text;\n\tvdc @11 :Text;\n\tdisk @12 :List(Text);\n\tsshkey @13 :Text;\n\tsshAddr @14 :Text;\n\tsshPort @15 :Int64 = 0;\n\tovfLink @16 :Text;\n\tovfUsername @17 :Text;\n\tovfPassword @18 :Text;\n\tovfPath @19 :Text;\n\tovfCallbackUrl @20 :Text;\n\tstackID @21 :Int64 = -1;\n\tvmHistory @22 :Text;\n\tuservdc @23 :List(UserVdcEntry);\n\tcloneName @24 :Text;\n\tsnapshots @25 :List(Text);\n\tsnapshotEpoch @26 :Text;\n\tsshAuthorized @27 :Bool = false;\n\tvmInfoCallback @28 :Text;\n\n\tstruct UserVdcEntry {\n\t\tname @0 :Text;\n\t\taccesstype @1 :Text = \"R\";\n\t}\n}\n",
@@ -572,31 +567,31 @@
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_5\/vdc!vdcname\/node!demo",
+  "path":"services\/vdcfarm!auto_3\/vdc!testTest\/node!demo",
   "url":"jdhsjhds:"
  },
- "key":"a88cd4cf021446ac32a6ced6def2592c",
+ "key":"bbce0c75a98c0986dff63a2d3b72f396",
  "name":"demo",
  "parent":{
   "actorName":"vdc",
-  "key":"3386796a570608813c20e244a40dca35",
-  "serviceName":"vdcname"
+  "key":"8f47737743f77ecbbd891f7666901c28",
+  "serviceName":"testTest"
  },
  "producers":[
   {
    "actorName":"disk.ovc",
-   "key":"aa5e63d7a3358b8feba19202736a0a27",
+   "key":"4cab203137b4bedc304bd134b4ab7624",
    "serviceName":"myDisk"
   },
   {
    "actorName":"sshkey",
-   "key":"83c6a00514127376b7b943a977742676",
-   "serviceName":"id_rsa"
+   "key":"a7979a3d87c7b1d691f884814d1a969a",
+   "serviceName":"auto_0"
   },
   {
    "actorName":"vdc",
-   "key":"3386796a570608813c20e244a40dca35",
-   "serviceName":"vdcname"
+   "key":"8f47737743f77ecbbd891f7666901c28",
+   "serviceName":"testTest"
   }
  ],
  "state":"ok"

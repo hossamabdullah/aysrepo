@@ -12,16 +12,21 @@ def _get_cloud_space (service):
 def _create_machine (service, space):
     vdc = service.parent
     image_names = [i['name'] for i in space.images]
+    sshkey = service.producers['sshkey'][0]
+    key_path = j.sal.fs.joinPaths(sshkey.path, sshkey.name)
+    j.clients.ssh.load_ssh_key(key_path, True)
     if service.model.data.osImage not in image_names:
         raise j.exceptions.NotFound('Image %s not available for vdc %s' % (service.model.data.osImage, vdc.name))
-    sshName = service.producers.get('sshkey')[0].name
     machine = space.machine_create(name=service.name,
                                    image=service.model.data.osImage,
                                    memsize=service.model.data.memory,
                                    disksize=service.model.data.bootdiskSize,
                                    sizeId=service.model.data.sizeID if service.model.data.sizeID >= 0 else None,
-                                   stackId=o.model.data.stackID if service.model.data.stackID >= 0 else None,
-                                   sshkeyname=sshName)
+                                   stackId=service.model.data.stackID if service.model.data.stackID >= 0 else None,
+                                   sshkeyname=sshkey.name,
+                                   sshkeypath=key_path,
+                                   description=service.model.data.description
+                                   )
     return machine
     
 
@@ -48,7 +53,7 @@ def _configure_ports (service, machine):
             local_port = port
             public_port = None
         if not skip:
-            machine.create_portforwarding(publicport=public_port, localport=local_port, protocol='tcp')
+            machine.portforward_create(publicport=public_port, localport=local_port, protocol='tcp')
     ports = []
     for port_forward in machine.portforwards:
         port_added = "{public}:{local}".format(public=port_forward["publicPort"], local=port_forward["localPort"])
@@ -67,24 +72,29 @@ def _check_ssh_authorization (service, machine):
     if not service.model.data.sshAuthorized:
         _, vm_info = machine.machineip_get()
         if vm_info['status'] not in ['HALTED', 'PAUSED']:
-            prefab = _ssh_authorize(service, vm_info)
+            prefab = _ssh_authorize_root(service, vm_info)
             return prefab
     return False
     
 
-def _ssh_authorize (service, vm_info):
+def _ssh_authorize_root (service, vm_info):
     if 'sshkey' not in service.producers:
         raise j.exceptions.AYSNotFound("No sshkey service consumed. please consume an sshkey service")
     service.logger.info("Authorizing ssh key to machine {}".format(vm_info['name']))
     sshkey = service.producers['sshkey'][0]
-    key_path = j.sal.fs.joinPaths(sshkey.path, 'id_rsa')
-    password = vm_info['accounts'][0]['password'] if vm_info['accounts'][0]['password'] != '' else None
-    executor = j.tools.executor.getSSHBased(addr=service.model.data.ipPublic, port=service.model.data.sshPort,
-                                            timeout=5, usecache=False)
-    executor.prefab.system.ssh.authorize("root", sshkey.model.data.keyPub)
+    key_path = j.sal.fs.joinPaths(sshkey.path, sshkey.name)
+    j.clients.ssh.load_ssh_key(key_path, True)
+    machineip, machinedict = machine.machineip_get()
+    publicip = machine.space.model['publicipaddress']
+    login = machinedict['accounts'][0]['login']
+    password = machinedict['accounts'][0]['password']
+    sshport = machine.portforwards[0]['publicPort']
+    sshclient = j.clients.ssh.get(
+        addr=publicip, port=sshport, login=login, passwd=password, look_for_keys=False, timeout=300)
+    sshclient.SSHAuthorizeKey(sshkey_name=sshkey.name, sshkey_path=key_path)
     service.model.data.sshAuthorized = True
     service.saveAll()
-    return executor.prefab
+    return machine.prefab
     
 
 def _configure_disks (service, machine, prefab):
@@ -219,6 +229,10 @@ def install (job):
         machine = space.machines.get(service.name)
         if not machine:
             machine = _create_machine(service, space)
+        else:
+            sshkey = service.producers['sshkey'][0]
+            key_path = j.sal.fs.joinPaths(sshkey.path, sshkey.name)
+            space.configure_machine(machine=machine, name=service.name, sshkey_name=sshkey.name, sshkey_path=key_path)
         _configure_ports(service, machine)
         authorization_user(machine, service)
         ip, vm_info = machine.machineip_get()
@@ -284,9 +298,9 @@ def processChange (job):
                 for public_port, local_port in to_remove:
                     if local_port == 22:
                         continue
-                    machine.delete_portforwarding(public_port)
+                    machine.portforward_delete(public_port)
                 for public_port, local_port in to_create:
-                    machine.create_portforwarding(
+                    machine.portforward_create(
                         publicport=public_port, localport=local_port, protocol='tcp'
                     )
                 all_ports = []
@@ -383,7 +397,7 @@ def import_ (job):
 def init_actions_ (service, args):
     '''
     this needs to returns an array of actions representing the dependencies between actions.
-s at ACTION_DEPS in this module for an example of what is expected
+xample of what is expected
     '''
     action_required = args.get('action_required')
     if action_required in ['stop', 'uninstall']:
@@ -480,8 +494,7 @@ def add_disk (job):
 def open_port (job):
     '''
     Open port in the firewall by creating port forward
-ublic_port is None, auto select available port
-rn the public port assigned
+available port
     '''
     requested_port = job.model.args['requested_port']
     public_port = job.model.args.get('public_port', None)
@@ -508,7 +521,7 @@ rn the public port assigned
                     spaceport += 1
         else:
             spaceport = public_port
-        machine.create_portforwarding(spaceport, requested_port)
+        machine.portforward_create(spaceport, requested_port)
     ports.add("%s:%s" % (spaceport, requested_port))
     service.model.data.ports = list(ports)
     service.saveAll()

@@ -1,7 +1,7 @@
 {
  "actions":[
   {
-   "actionKey":"4e1db8b808e01cfb8f43cb12f410ba12",
+   "actionKey":"364b42ef287b22c55ce63e228d84089e",
    "isJob":true,
    "log":true,
    "longjob":false,
@@ -215,7 +215,7 @@
  "name":"sshkey",
  "origin":{
   "gitUrl":"https:\/\/github.com\/jumpscale\/ays9.git",
-  "path":"templates\/clients\/sshkey\/"
+  "path":"templates\/clients\/sshkey"
  },
  "serviceDataSchema":"@0xaf4e2a542f11b714;\nstruct Schema {\n\tkeyPath @0 :Text;\n\tkeyName @1 :Text;\n\tkeyPassphrase @2 :Text;\n\tkeyPriv @3 :Text;\n\tkeyPub @4 :Text;\n}\n",
  "state":"new"

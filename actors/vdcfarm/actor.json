@@ -215,7 +215,7 @@
  "name":"vdcfarm",
  "origin":{
   "gitUrl":"git@github.com:openvcloud\/ays_templates.git",
-  "path":"templates\/vdcfarm\/"
+  "path":"templates\/vdcfarm"
  },
  "serviceDataSchema":"\n@0xc9068ab71f0c803d;\nstruct Schema {\n\tdescription @0 :Text;\n\n}\n",
  "state":"new"

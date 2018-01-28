@@ -275,7 +275,7 @@
  "name":"vdc",
  "origin":{
   "gitUrl":"git@github.com:openvcloud\/ays_templates.git",
-  "path":"templates\/vdc\/"
+  "path":"templates\/vdc"
  },
  "parent":{
   "actorRole":"vdcfarm",

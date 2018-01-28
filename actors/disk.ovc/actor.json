@@ -245,7 +245,7 @@
  "name":"disk.ovc",
  "origin":{
   "gitUrl":"git@github.com:openvcloud\/ays_templates.git",
-  "path":"templates\/disk.ovc\/"
+  "path":"templates\/disk.ovc"
  },
  "producers":[
   {

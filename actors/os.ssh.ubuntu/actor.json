@@ -1,7 +1,7 @@
 {
  "actions":[
   {
-   "actionKey":"9e6e29a0e888e41e34cd43560a73c324",
+   "actionKey":"e13fadc4ca25bfc3b3ecd59c1dc66efb",
    "isJob":true,
    "log":true,
    "longjob":false,
@@ -11,7 +11,7 @@
    "timeout":0
   },
   {
-   "actionKey":"0390666cc195aa2651931927c3996bc9",
+   "actionKey":"b11309ce1f26ab5d33c6fb4db43199fc",
    "isJob":true,
    "log":true,
    "longjob":false,
@@ -225,7 +225,7 @@
  "name":"os.ssh.ubuntu",
  "origin":{
   "gitUrl":"https:\/\/github.com\/jumpscale\/ays9.git",
-  "path":"templates\/os\/os.ssh.ubuntu\/"
+  "path":"templates\/os\/os.ssh.ubuntu"
  },
  "parent":{
   "actorRole":"node",
