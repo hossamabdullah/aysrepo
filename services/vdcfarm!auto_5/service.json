@@ -4,7 +4,7 @@
    "actionKey":"5eb8490ce3e79e477a670131cd481921",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1517146578,
+   "lastRun":1517146604,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -16,7 +16,7 @@
    "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1517146578,
+   "lastRun":1517146604,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -241,12 +241,12 @@
    "timeout":0
   }
  ],
- "actorKey":"6d94e91deb34d5a9d391894b6a962444",
+ "actorKey":"22f19c7792d6324edd1284d3e002d6d4",
  "actorName":"vdcfarm",
  "consumers":[
   {
    "actorName":"vdc",
-   "key":"ea9a22fa09b695a37cee3a4935e81c93",
+   "key":"42769ba0674e690c4c0e26e1e2b5df92",
    "serviceName":"testTest"
   }
  ],
@@ -255,11 +255,11 @@
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_4",
+  "path":"services\/vdcfarm!auto_5",
   "url":"jdhsjhds:"
  },
- "key":"b66fea02af27f9d852ac3d09260239f3",
- "name":"auto_4",
+ "key":"afe9b8bbb1a2d4fd00b81a38c3f66065",
+ "name":"auto_5",
  "parent":{
 
  },
