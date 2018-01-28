@@ -58,7 +58,7 @@ def install (job):
     if 'g8client' not in service.producers:
         raise j.exceptions.AYSNotFound("No producer g8client found. Cannot continue install of %s" % service)
     g8client = service.producers["g8client"][0]
-    cl = j.clients.openvcloud.getFromAYSService(service)
+    cl = j.clients.openvcloud.getFromAYSService(g8client)
     account = cl.account_get(name=service.model.dbobj.name,
                              create=True,
                              maxMemoryCapacity=service.model.data.maxMemoryCapacity,
