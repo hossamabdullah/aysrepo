@@ -1,7 +1,7 @@
 {
  "actions":[
   {
-   "actionKey":"9e6e29a0e888e41e34cd43560a73c324",
+   "actionKey":"e13fadc4ca25bfc3b3ecd59c1dc66efb",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
@@ -13,7 +13,7 @@
    "timeout":0
   },
   {
-   "actionKey":"8121908a1b590a0a079f719251d63827",
+   "actionKey":"b11309ce1f26ab5d33c6fb4db43199fc",
    "errorNr":0,
    "isJob":true,
    "lastRun":0,
@@ -28,7 +28,7 @@
    "actionKey":"5eb8490ce3e79e477a670131cd481921",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1517836572,
+   "lastRun":1517836990,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -40,7 +40,7 @@
    "actionKey":"be6b02cf9310284fd26e03a7888e40b6",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1517836572,
+   "lastRun":1517836990,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -253,32 +253,32 @@
    "timeout":0
   }
  ],
- "actorKey":"73b6cf71a6b2464b15e0eaae96e53a3d",
+ "actorKey":"9234e81f642a8164cf5f1454238a4f93",
  "actorName":"os.ssh.ubuntu",
  "dataSchema":"\n@0x92cba4b182ff7e26;\nstruct Schema {\n\tnode @0 :Text;\n\tsshkey @1 :Text;\n\tsshAddr @2 :Text;\n\tsshPort @3 :Int64 = 0;\n\n}\n",
  "eventFilters":[
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_2\/vdc!testTest\/node!demo\/os!demo",
+  "path":"services\/vdcfarm!auto_3\/vdc!testTest\/node!demo\/os!demo",
   "url":"jdhsjhds:"
  },
- "key":"9a67e818f5861f57bc9765ee655b5e5f",
+ "key":"8b30768dcd207fa1efb06e1f239881e8",
  "name":"demo",
  "parent":{
   "actorName":"node.ovc",
-  "key":"96d29bf339d76d8ded442d265f46e357",
+  "key":"12415afc7af76030f08b75ebc97b11ef",
   "serviceName":"demo"
  },
  "producers":[
   {
    "actorName":"sshkey",
-   "key":"791b326275e57d57ae8d6f5f3339b336",
+   "key":"b511277cf76142c98142725d107f722f",
    "serviceName":"auto_0"
   },
   {
    "actorName":"node.ovc",
-   "key":"96d29bf339d76d8ded442d265f46e357",
+   "key":"12415afc7af76030f08b75ebc97b11ef",
    "serviceName":"demo"
   }
  ],

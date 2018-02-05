@@ -8,7 +8,7 @@ def input (job):
         if not j.sal.fs.exists(path, followlinks=True):
             raise j.exceptions.Input(message="Cannot find ssh key:%s for service:%s" %
                                      (path, job.service), level=1, source="", tags="", msgpub="")
-        args['key.path'] = j.sal.fs.joinPaths(job.service.path, "id_rsa")
+        args['key.path'] = j.sal.fs.joinPaths(job.service.path, job.service.path)
         j.sal.fs.createDir(job.service.path)
         j.sal.fs.copyFile(path, args['key.path'])
         j.sal.fs.copyFile(path + '.pub', args['key.path'] + '.pub')
@@ -28,16 +28,20 @@ def input (job):
         j.sal.fs.copyFile(path + '.pub', j.sal.fs.joinPaths(job.service.path, '%s.%s' % (args["key.path"], 'pub')))
     if 'key.priv' not in args or args['key.priv'].strip() == "":
         print("lets generate private key")
-        args['key.path'] = j.sal.fs.joinPaths(job.service.path, "id_rsa")
+        args['key.path'] = j.sal.fs.joinPaths(job.service.path, job.service.name)
         j.sal.fs.createDir(job.service.path)
         j.sal.fs.remove(args['key.path'])
         cmd = "ssh-keygen -q -t rsa -f %s -N ''" % (args['key.path'])
-        rc, out, err = j.sal.process.execute(cmd, die=True)
+        j.sal.process.execute(cmd, die=True)
         args["key.priv"] = j.sal.fs.fileGetContents(args['key.path'])
         args["key.pub"] = j.sal.fs.fileGetContents(args['key.path'] + '.pub')
     j.sal.fs.chmod(args['key.path'], 0o600)
     j.sal.fs.chmod(args['key.path']+ '.pub', 0o600)
     return args
+    
+
+def delete (job):
+    j.clients.ssh.ssh_key_unload(job.model.args.get('key.name'))
     
 
 def init (job):
@@ -152,9 +156,5 @@ Looks at ACTION_DEPS in this module for an example of what is expected
         'uninstall': ['stop'],
     }
     
-    
-
-def delete (job):
-    job.service.delete()
     
 
