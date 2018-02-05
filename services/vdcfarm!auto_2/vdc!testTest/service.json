@@ -16,7 +16,7 @@
    "actionKey":"7535f668de477726491f90311e3ec0e9",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1517147174,
+   "lastRun":1517836571,
    "log":true,
    "longjob":false,
    "name":"input",
@@ -28,7 +28,7 @@
    "actionKey":"849e469e7b71762d4c05763cfd26048a",
    "errorNr":0,
    "isJob":true,
-   "lastRun":1517147174,
+   "lastRun":1517836572,
    "log":true,
    "longjob":false,
    "name":"init",
@@ -313,12 +313,12 @@
    "timeout":0
   }
  ],
- "actorKey":"4b8fb5a2d29b46293187467eee01611c",
+ "actorKey":"e2e744be4b6f9a2153722c98f308ec8e",
  "actorName":"vdc",
  "consumers":[
   {
    "actorName":"node.ovc",
-   "key":"102aa49ad5308ebc68b386884c261610",
+   "key":"96d29bf339d76d8ded442d265f46e357",
    "serviceName":"demo"
   }
  ],
@@ -327,30 +327,30 @@
 
  ],
  "gitRepo":{
-  "path":"services\/vdcfarm!auto_7\/vdc!testTest",
+  "path":"services\/vdcfarm!auto_2\/vdc!testTest",
   "url":"jdhsjhds:"
  },
- "key":"cd296eacd523742d6c16c0f7024b9982",
+ "key":"ed36fabdc52aaba1e378e91c62decd14",
  "name":"testTest",
  "parent":{
   "actorName":"vdcfarm",
-  "key":"4dd088c59539768bad6c8df4c5265c03",
-  "serviceName":"auto_7"
+  "key":"7430676fd016549f9de2a3c6eafe60e7",
+  "serviceName":"auto_2"
  },
  "producers":[
   {
    "actorName":"g8client",
-   "key":"454075f2b1a81be1a72b7144916964a9",
+   "key":"b0f5dd37a296b2102d57c507ec40bfc3",
    "serviceName":"env"
   },
   {
    "actorName":"vdcfarm",
-   "key":"4dd088c59539768bad6c8df4c5265c03",
-   "serviceName":"auto_7"
+   "key":"7430676fd016549f9de2a3c6eafe60e7",
+   "serviceName":"auto_2"
   },
   {
    "actorName":"account",
-   "key":"809f260c1b6764673aaa8c6d0aaed431",
+   "key":"d12c909760f8d7210f300b94dd5dc9ba",
    "serviceName":"hossam"
   }
  ],

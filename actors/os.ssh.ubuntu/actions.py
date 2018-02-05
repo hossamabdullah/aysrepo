@@ -20,12 +20,9 @@ def install (job):
         raise j.exceptions.RuntimeError("sshkey path not found at %s" % key_path)
     password = node.model.data.sshPassword if node.model.data.sshPassword != '' else None
     passphrase = sshkey.model.data.keyPassphrase if sshkey.model.data.keyPassphrase != '' else None
-    key_path = j.sal.fs.joinPaths(sshkey.path, sshkey.name)
-    service.logger.debug("registering sshkey")
-    sshclient = j.clients.ssh.get(
-        addr=node.model.data.ipPublic, port=node.model.data.sshPort, login=node.model.data.sshLogin,
-        passwd=node.model.data.sshPassword, allow_agent=False, look_for_keys=False, timeout=300)
-    sshclient.SSHAuthorizeKey(sshkey_name=sshkey.name, sshkey_path=key_path)
+    executor = j.tools.executor.getSSHBased(addr=node.model.data.ipPublic, port=service.model.data.sshPort,
+                                            timeout=5, usecache=False,)
+    executor.prefab.system.ssh.authorize("root", sshkey.model.data.keyPub)
     j.tools.prefab.resetAll()
     service.saveAll()
     
@@ -47,7 +44,10 @@ def getExecutor (job):
             if ssh_port == dst:
                 ssh_port = src
                 break
-    executor = j.tools.executor.getSSHBased(addr=node.model.data.ipPublic, port=ssh_port)
+    executor = j.tools.executor.getSSHBased(addr=node.model.data.ipPublic, port=ssh_port,
+                                            login='root', passwd=None,
+                                            allow_agent=True, look_for_keys=True, timeout=5, usecache=False,
+                                            passphrase=passphrase, key_filename=key_path)
     return executor
     
 
